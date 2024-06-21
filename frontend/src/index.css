@@ -8,7 +8,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+img{
+  width: 100%;
 }
 body{
   font-family: "Poppins", sans-serif;
+}
+
+.footer-bg{
+  background: linear-gradient(90deg, #086D1E 0%, #303A9E 100%);
 }

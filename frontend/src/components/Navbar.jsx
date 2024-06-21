@@ -1,20 +1,58 @@
-import { logo } from "../assets"
+import { useState } from "react";
+import { logo } from "../assets";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [active, setActive] = useState("Home");
   return (
-    <nav className="flex items-center justify-between">
-        <div className="">
-            <img src={logo} alt="" />
-        </div>
-        <ul className="flex items-center">
-            <li className="">Home</li>
-            <li className="">About Us</li>
-            <li className="">Register Here</li>
-            <li className="">Contact Us</li>
-            <li className="">Why study in the US</li>
-        </ul>
+    <nav className="w-full py-6 flex items-center justify-between">
+      <div className="">
+        <img src={logo} alt="" className="w-[124px]" />
+      </div>
+      <ul className="flex items-center">
+        <li
+          className={`font-semibold text-xl ${
+            active === "Home" ? "text-black" : "text-linkColor"
+          } mr-10`}
+          onClick={() => setActive("Home")}
+        >
+          <Link to="/">Home</Link>
+        </li>
+        <li
+          className={`font-semibold text-xl ${
+            active === "About" ? "text-black" : "text-linkColor"
+          } mr-10`}
+          onClick={() => setActive("About")}
+        >
+          <Link to="/about">About Us</Link>
+        </li>
+        <li
+          className={`font-semibold text-xl ${
+            active === "Register" ? "text-black" : "text-linkColor"
+          } mr-10`}
+          onClick={() => setActive("Register")}
+        >
+          <Link to="/register">Register Here</Link>
+        </li>
+        <li
+          className={`font-semibold text-xl ${
+            active === "Contact" ? "text-black" : "text-linkColor"
+          } mr-10`}
+          onClick={() => setActive("Contact")}
+        >
+          <Link to="/contact">Contact Us</Link>
+        </li>
+        <li
+          className={`font-semibold text-xl ${
+            active === "Whyus" ? "text-black" : "text-linkColor"
+          } mr-10`}
+          onClick={() => setActive("Whyus")}
+        >
+          <Link to="/whyus">Why study in the US</Link>
+        </li>
+      </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

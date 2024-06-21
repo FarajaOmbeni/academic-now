@@ -6,15 +6,21 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/register" element={<Register />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/whystudy" element={<WhyStudy />}></Route>
-        </Routes>
-        <Footer />
+        <div className="container mx-auto sm:px-16 px-6">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/register" element={<Register />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/whystudy" element={<WhyStudy />}></Route>
+          </Routes>
+        </div>
+        <div className="footer-bg">
+          <div className="container mx-auto sm:px-16 px-6">
+            <Footer />
+          </div>
+        </div>
       </BrowserRouter>
     </>
   );
