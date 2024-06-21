@@ -21,6 +21,7 @@ import streamlinedApplications from "./streamlined-applications.png";
 import videoDiscussion from "./video-discussion.png";
 import visaSupport from "./visa-support.png";
 import yale from "./yale.png";
+import playIcon from "./playIcon.svg";
 
 export {
     logo,
@@ -45,5 +46,6 @@ export {
     streamlinedApplications,
     videoDiscussion,
     visaSupport,
-    yale 
+    yale,
+    playIcon 
 }
