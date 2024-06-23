@@ -1,4 +1,4 @@
-import { AboutCompany, Divider, EffortlessEnrollment, Hero, WhyStudy } from "../components"
+import { AboutCompany, ContactUs, Divider, EffortlessEnrollment, Hero, OurServices, Testimonials, WhyStudy } from "../components"
 
 const Home = () => {
   return (
@@ -9,6 +9,12 @@ const Home = () => {
       <EffortlessEnrollment />
       <Divider />
       <AboutCompany />
+      <OurServices />
+      <Divider />
+      <Testimonials />
+      <Divider />
+      <ContactUs />
+      <Divider />
     </div>
   )
 }

@@ -7,6 +7,9 @@ import contactImg from "./contact-img.png";
 import cornell from "./cornell.png";
 import culturalExperience from "./cultural-experience.svg";
 import diverseProgram from "./diverse-program.svg";
+import phoneCall from "./bxs_phone-call.svg";
+import emailIcon from "./ic_sharp-email.svg";
+import location from "./carbon_location-filled.svg";
 import effectiveInteraction from "./effective-interaction.svg";
 import enrollmentImage from "./enrollment-image.png";
 import expertEssay from "./expert-essay.png";
@@ -22,6 +25,8 @@ import videoDiscussion from "./video-discussion.png";
 import visaSupport from "./visa-support.png";
 import yale from "./yale.png";
 import playIcon from "./playIcon.svg";
+import testimonialBg from "./testimonialBg.png";
+import contactGradient from "./contactGradient.png";
 
 export {
     logo,
@@ -47,5 +52,10 @@ export {
     videoDiscussion,
     visaSupport,
     yale,
-    playIcon 
+    playIcon,
+    testimonialBg,
+    phoneCall,
+    emailIcon,
+    location,
+    contactGradient
 }

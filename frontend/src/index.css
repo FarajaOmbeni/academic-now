@@ -24,3 +24,9 @@ body {
   height: 4px;
   background: linear-gradient(90deg, rgba(217, 217, 217, 0.6) 0%, #737373 100%);
 }
+
+.button-contact {
+  border-radius: 5px;
+  background: linear-gradient(90deg, #475ba4 0%, #100b48 100%);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
+}

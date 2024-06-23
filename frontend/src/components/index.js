@@ -5,3 +5,6 @@ export { default as Hero } from './Home/Hero';
 export { default as WhyStudy } from './Home/WhyStudy';
 export { default as EffortlessEnrollment } from './Home/EffortlessEnrollment';
 export { default as AboutCompany } from './Home/AboutCompany';
+export { default as OurServices } from './Home/OurServices';
+export { default as Testimonials } from './Home/Testimonials';
+export { default as ContactUs } from './Home/ContactUs';
