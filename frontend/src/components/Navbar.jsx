@@ -48,7 +48,7 @@ const Navbar = () => {
           } mr-10`}
           onClick={() => setActive("Whyus")}
         >
-          <Link to="/whyus">Why study in the US</Link>
+          <Link to="/whystudy">Why study in the US</Link>
         </li>
       </ul>
     </nav>

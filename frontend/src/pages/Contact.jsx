@@ -1,6 +1,12 @@
+import { ContactIntro, ContactUs, Divider } from "../components"
+
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <ContactIntro />
+      <ContactUs />
+      <Divider />
+    </div>
   )
 }
 

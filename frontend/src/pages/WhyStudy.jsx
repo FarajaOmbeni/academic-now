@@ -1,6 +1,11 @@
+import { AcademicFoundation, Study } from "../components"
+
 const WhyStudy = () => {
   return (
-    <div>WhyStudy</div>
+    <div>
+      <Study />
+      <AcademicFoundation />
+    </div>
   )
 }
 
