@@ -1,13 +1,18 @@
 import {
+  columbia,
   culturalExperience,
   diverseProgram,
   effectiveInteraction,
   expertEssay,
   flexibleTime,
   globalRecognition,
+  harvard,
+  purdue,
   reliable,
+  southernCalifornia,
   streamlinedApplications,
   visaSupport,
+  yale,
 } from "../assets";
 
 export const WhyStudySection = [
@@ -122,3 +127,32 @@ export const services = [
     img: visaSupport,
   },
 ];
+
+export const partners = [
+  {
+    id: 1,
+    title: "University of Southern Carlifornia",
+    img: southernCalifornia,
+  },
+  {
+    id: 2,
+    title: "Harvard University",
+    img: harvard,
+  },
+  {
+    id: 3,
+    title: "Columbia University",
+    img: columbia,
+  },
+  {
+    id: 3,
+    title: "Purdue University",
+    img: purdue,
+  },
+  {
+    id: 3,
+    title: "Yale University",
+    img: yale,
+  },
+];
+

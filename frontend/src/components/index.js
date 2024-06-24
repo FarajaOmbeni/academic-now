@@ -10,3 +10,4 @@ export { default as Testimonials } from './Home/Testimonials';
 export { default as ContactUs } from './Home/ContactUs';
 export { default as Introduction } from './Register/Introduction';
 export { default as RegistrationForm } from './Register/RegistrationForm';
+export { default as WhoWeAre } from './About/WhoWeAre';
