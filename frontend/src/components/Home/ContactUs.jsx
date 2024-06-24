@@ -21,7 +21,7 @@ const ContactUs = () => {
               Say something to start a live chat!
             </p>
           </div>
-          <div className="flex items-center gap-4 mb-6">
+          <div className="flex items-center gap-4 mb-6 mt-32">
             <img src={phoneCall} alt="" className="w-[24px] h-[24px]" />
             <p className="text-white text-[16px] font-normal">
               Tel. (+255) 7123-567-89
@@ -69,7 +69,6 @@ const ContactUs = () => {
               </div>
             </div>
 
-
             <div className="flex gap-4 mb-8">
               <div className="flex flex-col">
                 <label htmlFor="name" className="mb-4">
@@ -98,24 +97,36 @@ const ContactUs = () => {
 
             {/* choose subject*/}
             <div>
-                <p className="text-[#2E3899] text-[14px] font-semibold leading-[20px]">Select Subject</p>
-                <select name="" id="">
-                    <option value="">Select Subject</option>
-                    <option value="General Enquiry">General Enquiry</option>
-                    <option value="Service Enquiry">Service Enquiry</option>
-                    <option value="Office Enquiry">Office Enquiry</option>
-                    <option value="School Enquiry">School Enquiry</option>
-                </select>
+              <p className="mb-4 text-[#2E3899] text-[14px] font-semibold leading-[20px]">
+                Select Subject
+              </p>
+              <div className="flex gap-4">
+                <label>
+                  <input type="radio" name="subject" value="General Enquiry" className="mr-2"/>
+                  General Enquiry
+                </label>
+                <label>
+                  <input type="radio" name="subject" value="Service Enquiry" className="mr-2" />
+                  Service Enquiry
+                </label>
+                <label>
+                  <input type="radio" name="subject" value="Office Enquiry"  className="mr-2"/>
+                  Office Enquiry
+                </label>
+                <label>
+                  <input type="radio" name="subject" value="School Enquiry" className="mr-2" />
+                  School Enquiry
+                </label>
+              </div>
 
-                <div className="">
-                    <label htmlFor="">Message</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-
+              <div className="flex flex-col my-4">
+                <label htmlFor="" className="text-[#8D8D8D] text-[12px] font-normal leading-[20px] mb-2">Message</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write your message" className="p-4 border border-[#8D8D8D] rounded-[3px] outline-0"></textarea>
+              </div>
             </div>
 
-            <div className="">
-                <button className="button-contact px-8 py-4">Send Message</button>
+            <div className="flex items-center justify-end">
+              <button className="button-contact px-8 py-4">Send Message</button>
             </div>
           </form>
         </div>

@@ -1,7 +1,13 @@
-const Register = () => {
+import { EffortlessEnrollment, Introduction, RegistrationForm } from "../components"
+
+const About = () => {
   return (
-    <div>Register</div>
+    <div>
+      <Introduction />
+      <EffortlessEnrollment />
+      <RegistrationForm />
+    </div>
   )
 }
 
-export default Register
+export default About

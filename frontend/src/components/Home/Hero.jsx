@@ -6,9 +6,9 @@ const Hero = () => {
       {/* heading */}
       <div className="flex flex-col flex-1">
         <div className="">
-          <h1 className="text-[50px] font-bold leading-[66px] text-primaryBlue">
+          <h1 className="text-[78px] font-bold leading-[66px] text-primaryBlue">
             OPENING DOORS
-            <p className="text-#1C1C1C font-normal leading-[66px]">
+            <p className="text-[78px] text-#1C1C1C font-normal leading-[66px]">
               FOR US STUDIES
             </p>
           </h1>

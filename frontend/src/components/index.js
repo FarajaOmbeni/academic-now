@@ -8,3 +8,5 @@ export { default as AboutCompany } from './Home/AboutCompany';
 export { default as OurServices } from './Home/OurServices';
 export { default as Testimonials } from './Home/Testimonials';
 export { default as ContactUs } from './Home/ContactUs';
+export { default as Introduction } from './Register/Introduction';
+export { default as RegistrationForm } from './Register/RegistrationForm';
