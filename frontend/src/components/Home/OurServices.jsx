@@ -18,21 +18,24 @@ const OurServices = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-      {services.map((service) => (
-        <div
-          key={service.id}
-          className="flex flex-col items-center"
-        >
-          <img src={service.img} alt="" />
-          <h5 className="text-[#1C1C1C] text-[22px] font-semibold text-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {services.map((service) => (
+          <div
+            key={service.id}
+            className="whyus-card border border-1 relative flex flex-col items-center"
+          >
+            <img src={service.img} alt="" />
+            <div className="p-2">
+              <h5 className="text-[#1C1C1C] text-[22px] font-semibold text-center">
                 {service.title}
               </h5>
-              <p className="text-center">{service.content}</p>
-
-              <button className="bg-[#FFCF59] rouded-13px px-6 py-3">GET STARTED</button> 
-        </div>
-      ))}
+              <p className="text-center mb-12">{service.content}</p>
+            </div>
+            <button className="text-[#1C1C1C] text-[14px] font-semibold bg-[#FFCF59] rounded-[13px] px-6 py-3 absolute transform -translate-x-1/2 left-1/2 bottom-[-5%]">
+              GET STARTED
+            </button>
+          </div>
+        ))}
       </div>
     </div>
   );

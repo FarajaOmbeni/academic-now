@@ -12,7 +12,7 @@ const ContactUs = () => {
 
       {/* box */}
       <div className="flex justify-between">
-        <div className="bg-[url('./assets/contactGradient.png')] px-6 py-12">
+        <div className="bg-[url('./assets/contactGradient.png')] bg-cover px-6 py-12">
           <div className="mb-8">
             <h4 className="text-white text-[28px] font-semibold">
               Contact Information
@@ -126,7 +126,7 @@ const ContactUs = () => {
             </div>
 
             <div className="flex items-center justify-end">
-              <button className="button-contact px-8 py-4">Send Message</button>
+              <button className="text-[white] font-medium text-[16px] button-contact px-8 py-4">Send Message</button>
             </div>
           </form>
         </div>
