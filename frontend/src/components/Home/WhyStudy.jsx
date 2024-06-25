@@ -2,11 +2,11 @@ import { WhyStudySection } from "../../constants";
 
 const WhyStudy = () => {
   return (
-    <section className="my-32">
+    <section className="my-24">
       <div className="">
-        <h2 className="mb-8 text-[#1C1C1C] text-[64px] font-normal leading-[66px]">
+        <h2 className="text-center text-primaryBlue mb-8 text-[64px] font-semibold leading-[66px]">
           WHY STUDY{" "}
-          <span className="text-primaryBlue text-[64px] font-normal leading-[66px]">
+          <span className="text-[#1C1C1C] text-[64px] font-normal leading-[66px]">
             IN THE US ?
           </span>
         </h2>
@@ -18,16 +18,17 @@ const WhyStudy = () => {
       </div>
 
       {/* cards section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {WhyStudySection.map((section, index) => (
-          <div className="border rounded-2xl border-linkColor flex flex-col items-center justify-center p-4" key={index}>
+          <div className="whyus-card border bg-white rounded-2xl border-linkColor flex flex-col items-center justify-center p-2" key={index}>
             <img
               src={section.img}
-              alt=""
+              alt="section-img"
+              className="whyStudy-img mb-4"
               style={{ backgroundColor: section.color, width:'36px', height:'36px', padding:'4px', borderRadius: '9px' }}
             />
             <div className="">
-              <h5 className="text-[#1C1C1C] text-[22px] font-semibold text-center">
+              <h5 className="mb-2 text-[#1C1C1C] text-[22px] font-semibold text-center">
                 {section.title}
               </h5>
               <p className="text-center">{section.content}</p>

@@ -2,16 +2,16 @@ import { aboutCompany, playIcon } from "../../assets";
 
 const AboutCompany = () => {
   return (
-    <div>
-      <div className="flex flex-col items-center mb-4">
-        <h1 className="text-primaryBlue text-[52px] font-bold leading-[66px]">
+    <div className="my-24">
+      <div className="flex flex-col items-center">
+        <h1 className="text-primaryBlue text-[52px] font-bold leading-[66px] mb-4">
           About
           <span className="text-[#1C1C1C] text-[52px] font-bold leading-[66px]">
             {" "}
             Company
           </span>
         </h1>
-        <p className="text-[#333] text-[18px] font-normal leading-[26px]">
+        <p className="text-[#333] text-[18px] font-normal leading-[26px] text-center mb-6">
           The Academic Now Foundation is a consulting and training organization
           that supports public and private educational institutions, as well as
           people and groups in gaining access to intellectual, cultural, social,

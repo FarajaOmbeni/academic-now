@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   return (
-    <nav className="w-full py-6 flex items-center justify-between">
+    <nav className="w-full py-4 flex items-center justify-between">
       <div className="">
-        <img src={logo} alt="" className="w-[124px]" />
+        <img src={logo} alt="" className="w-[100px]" />
       </div>
       <ul className="flex items-center">
         <li
-          className={`font-semibold text-xl ${
+          className={`font-semibold text-[20px] ${
             active === "Home" ? "text-black" : "text-linkColor"
           } mr-10`}
           onClick={() => setActive("Home")}
@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li
-          className={`font-semibold text-xl ${
+          className={`font-semibold text-[20px] ${
             active === "About" ? "text-black" : "text-linkColor"
           } mr-10`}
           onClick={() => setActive("About")}
@@ -27,7 +27,7 @@ const Navbar = () => {
           <Link to="/about">About Us</Link>
         </li>
         <li
-          className={`font-semibold text-xl ${
+          className={`font-semibold text-[20px] ${
             active === "Register" ? "text-black" : "text-linkColor"
           } mr-10`}
           onClick={() => setActive("Register")}
@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link to="/register">Register Here</Link>
         </li>
         <li
-          className={`font-semibold text-xl ${
+          className={`font-semibold text-[20px] ${
             active === "Contact" ? "text-black" : "text-linkColor"
           } mr-10`}
           onClick={() => setActive("Contact")}
@@ -43,7 +43,7 @@ const Navbar = () => {
           <Link to="/contact">Contact Us</Link>
         </li>
         <li
-          className={`font-semibold text-xl ${
+          className={`font-semibold text-[20px] ${
             active === "Whyus" ? "text-black" : "text-linkColor"
           } mr-10`}
           onClick={() => setActive("Whyus")}

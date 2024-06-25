@@ -11,7 +11,7 @@ const OurServices = () => {
             Services
           </span>
         </h1>
-        <p className="text-[#333] text-[18px] font-normal leading-[26px]">
+        <p className="text-center mb-6 text-[#333] text-[18px] font-normal leading-[26px]">
           At Academic Now foundation, we believe in empowering students to
           pursue their academic dreams with confidence. Here are some of our
           services designed to streamline your journey to studying in the US.
@@ -29,7 +29,8 @@ const OurServices = () => {
                 {service.title}
               </h5>
               <p className="text-center">{service.content}</p>
-          
+
+              <button className="bg-[#FFCF59] rouded-13px px-6 py-3">GET STARTED</button> 
         </div>
       ))}
       </div>
