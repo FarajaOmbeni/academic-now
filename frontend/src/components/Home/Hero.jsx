@@ -2,14 +2,14 @@ import { Student } from "../../assets";
 
 const Hero = () => {
   return (
-    <div className="h-screen">
+    <div className="">
       <div className="flex justify-between">
         {/* heading */}
-        <div className="flex flex-col flex-1">
+        <div className="flex flex-col flex-1 mt-14">
           <div className="">
-            <h1 className="text-[70px] font-bold leading-[66px] text-primaryBlue">
+            <h1 className="text-7xl font-bold leading-[66px] text-primaryBlue">
               OPENING DOORS
-              <p className="text-[70px] text-[#1C1C1C] font-normal leading-[66px]">
+              <p className="text-7xl text-[#1C1C1C] font-normal leading-[66px]">
                 FOR US STUDIES
               </p>
             </h1>

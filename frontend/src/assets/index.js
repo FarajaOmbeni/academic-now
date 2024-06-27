@@ -27,7 +27,7 @@ import yale from "./yale.png";
 import playIcon from "./playIcon.svg";
 import testimonialBg from "./testimonialBg.png";
 import contactGradient from "./contactGradient.png";
-
+import quoteIcon from "./quote-icon.svg";
 export {
     logo,
     Student,
@@ -57,5 +57,6 @@ export {
     phoneCall,
     emailIcon,
     location,
-    contactGradient
+    contactGradient,
+    quoteIcon
 }

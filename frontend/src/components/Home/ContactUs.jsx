@@ -4,8 +4,8 @@ const ContactUs = () => {
   return (
     <div className="my-32">
       <div className="flex flex-col items-center mb-8">
-        <h2 className="text-[#2A3280] text-[40px] font-bold">Contact Us</h2>
-        <p className="#717171 text-[18px] font-medium">
+        <h2 className="text-[#2A3280] text-3xl mb-2 font-bold">Contact Us</h2>
+        <p className="text-[#717171] text-[18px] font-normal">
           Any question or remarks? Just write us a message!
         </p>
       </div>

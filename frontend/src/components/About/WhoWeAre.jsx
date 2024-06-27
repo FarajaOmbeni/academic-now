@@ -5,9 +5,9 @@ const WhoWeAre = () => {
   return (
     <div>
       <div className="">
-        <h1 className="text-primaryBlue text-[52px] font-bold leading-[66px] mb-8 text-center">
+        <h1 className="text-primaryBlue text-4xl font-bold leading-[66px] mb-8 text-center">
           Who
-          <span className="text-[#1C1C1C] text-[52px] font-bold leading-[66px]">
+          <span className="text-[#1C1C1C] text-4xl font-normal leading-[66px]">
             {" "}
             We Are
           </span>
@@ -23,9 +23,9 @@ const WhoWeAre = () => {
         </div>
 
         <div className="flex flex-col items-center mt-24">
-          <h1 className="text-primaryBlue text-[52px] font-bold leading-[66px]">
+          <h1 className="text-primaryBlue text-4xl font-bold leading-[66px]">
             Our
-            <span className="text-[#1C1C1C] text-[52px] font-bold leading-[66px]">
+            <span className="text-[#1C1C1C] text-4xl font-normal leading-[66px]">
               {" "}
               Expertise
             </span>
@@ -51,9 +51,9 @@ const WhoWeAre = () => {
         </div>
 
         <div className="flex flex-col items-center mt-24">
-          <h1 className="text-primaryBlue text-[52px] font-bold leading-[66px]">
+          <h1 className="text-primaryBlue text-4xl font-bold leading-[66px]">
             Our
-            <span className="text-[#1C1C1C] text-[52px] font-bold leading-[66px]">
+            <span className="text-[#1C1C1C] text-4xl font-normal leading-[66px]">
               {" "}
               Partners
             </span>
@@ -69,7 +69,7 @@ const WhoWeAre = () => {
           {partners.map((partner) => (
             <div key={partner.id} className="flex flex-col items-center partners-shadow">
               <img src={partner.img} alt="" />
-              <h5 className="mt-4 text-[#1C1C1C] text-[22px] font-semibold text-center">
+              <h5 className="mt-4 text-[#4D4D4D] text-xl font-semibold text-center p-2">
                 {partner.title}
               </h5>
             </div>

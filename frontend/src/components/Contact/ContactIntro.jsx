@@ -5,10 +5,10 @@ const ContactIntro = () => {
     <div>
       <div className="flex">
         <div className="">
-          <h1 className="text-[#2A3280] text-[89px] font-bold">Contact Us</h1>
-          <p className="text-[#717171] text-[25px] font-medium">
+          <h1 className="text-[#2A3280] text-7xl mb-8 font-bold">Contact Us</h1>
+          <p className="text-[#717171] text-2xl font-medium">
             Have any questions or remarks? <br /> We are here to help! <br />Just write us a
-            message with your concerns. Our team will get back to you promptly.
+            message with your concerns. <br /> Our team will get back to you promptly.
           </p>
         </div>
 

@@ -4,9 +4,9 @@ const WhyStudy = () => {
   return (
     <section className="my-24">
       <div className="">
-        <h2 className="text-center text-primaryBlue mb-8 text-[64px] font-semibold leading-[66px]">
+        <h2 className="text-center text-primaryBlue mb-8 text-6xl font-semibold leading-[66px]">
           WHY STUDY{" "}
-          <span className="text-[#1C1C1C] text-[64px] font-normal leading-[66px]">
+          <span className="text-[#1C1C1C] text-6xl font-normal leading-[66px]">
             IN THE US ?
           </span>
         </h2>
@@ -24,7 +24,7 @@ const WhyStudy = () => {
             <img
               src={section.img}
               alt="section-img"
-              className="whyStudy-img mb-4"
+              className="whyStudy-img mb-4 mt-4"
               style={{ backgroundColor: section.color, width:'36px', height:'36px', padding:'4px', borderRadius: '9px' }}
             />
             <div className="">

@@ -4,9 +4,9 @@ const OurServices = () => {
   return (
     <div className="my-32">
       <div className="flex flex-col items-center mb-4">
-        <h1 className="text-primaryBlue text-[52px] font-bold leading-[66px]">
+        <h1 className="text-primaryBlue text-4xl font-bold leading-[66px]">
           Our
-          <span className="text-[#1C1C1C] text-[52px] font-bold leading-[66px]">
+          <span className="text-[#1C1C1C] text-4xl font-normal leading-[66px]">
             {" "}
             Services
           </span>

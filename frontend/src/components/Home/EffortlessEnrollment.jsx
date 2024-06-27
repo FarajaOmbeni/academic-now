@@ -9,7 +9,7 @@ const EffortlessEnrollment = () => {
           <img src={enrollmentImage} alt="enrollment image" />
         </div>
         <div className="">
-          <h4 className="text-[52px] font-semibold leading-[66px] text-[#1C1C1C] mb-12 mt-6">
+          <h4 className="text-5xl font-bold leading-[66px] text-[#1C1C1C] mb-12 mt-6">
             Effortless Enrollment
           </h4>
           <div className="flex flex-col items-center">
