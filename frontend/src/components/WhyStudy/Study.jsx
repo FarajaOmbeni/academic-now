@@ -3,7 +3,7 @@ import { WhyStudySection } from "../../constants";
 
 const Study = () => {
   return (
-    <div>
+    <div className="container mx-auto sm:px-16 px-6"> 
       <div className="flex flex-col items-center mt-4 mb-8">
         <h1 className="text-primaryBlue text-[52px] font-bold leading-[66px]">
           Why Study in

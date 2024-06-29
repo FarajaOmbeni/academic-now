@@ -2,7 +2,7 @@ import { WhyStudySection } from "../../constants";
 
 const WhyStudy = () => {
   return (
-    <section className="my-24">
+    <section className="container mx-auto sm:px-16 px-6 my-24">
       <div className="">
         <h2 className="text-center text-primaryBlue mb-8 text-6xl font-semibold leading-[66px]">
           WHY STUDY{" "}

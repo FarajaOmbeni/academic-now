@@ -2,7 +2,7 @@ import { mwanaisha, quoteIcon } from "../../assets";
 
 const Testimonials = () => {
   return (
-    <div className="my-32">
+    <div className="my-24 container mx-auto sm:px-16 px-6">
       <div className="flex flex-col items-center mb-4">
         <h1 className="text-primaryBlue text-4xl font-bold leading-[66px]">
           What

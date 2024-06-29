@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="container mx-auto sm:px-16 px-6">
+        <div className="">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />}></Route>

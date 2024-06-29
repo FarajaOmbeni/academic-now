@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   return (
+    <section className="container mx-auto sm:px-16 px-6">
     <nav className="w-full py-4 flex items-center justify-between">
       <div className="">
         <img src={logo} alt="" className="w-[100px]" />
@@ -52,6 +53,7 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
+    </section>
   );
 };
 

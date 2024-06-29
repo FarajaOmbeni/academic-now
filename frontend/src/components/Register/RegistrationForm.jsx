@@ -1,6 +1,6 @@
 const RegistrationForm = () => {
   return (
-    <div className="">
+    <div className="container mx-auto sm:px-16 px-6">
       <div>
         <h3 className="text-[#FF7162] montserrat text-[30px] font-extrabold leading-[54px] mt-4">
           Registration Form - Personal Info

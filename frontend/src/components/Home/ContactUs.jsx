@@ -2,7 +2,7 @@ import { emailIcon, location, phoneCall } from "../../assets";
 
 const ContactUs = () => {
   return (
-    <div className="my-32">
+    <div className="my-24 container mx-auto sm:px-16 px-6">
       <div className="flex flex-col items-center mb-8">
         <h2 className="text-[#2A3280] text-3xl mb-2 font-bold">Contact Us</h2>
         <p className="text-[#717171] text-[18px] font-normal">

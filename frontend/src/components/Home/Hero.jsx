@@ -2,7 +2,7 @@ import { Student } from "../../assets";
 
 const Hero = () => {
   return (
-    <div className="">
+    <div className="container mx-auto sm:px-16 px-6">
       <div className="flex justify-between">
         {/* heading */}
         <div className="flex flex-col flex-1 mt-14">
@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
 
         <div className="flex-1">
-          <img src={Student} alt="" className="w-full h-auto" />
+          <img src={Student} alt="" className="hero-bg w-full h-auto" />
         </div>
       </div>
     </div>

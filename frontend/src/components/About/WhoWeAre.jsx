@@ -3,7 +3,7 @@ import { partners, services } from "../../constants";
 
 const WhoWeAre = () => {
   return (
-    <div>
+    <div className="container mx-auto sm:px-16 px-6">
       <div className="">
         <h1 className="text-primaryBlue text-4xl font-bold leading-[66px] mb-8 text-center">
           Who

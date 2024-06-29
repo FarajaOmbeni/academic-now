@@ -2,7 +2,7 @@ import { aboutCompany, playIcon } from "../../assets";
 
 const AboutCompany = () => {
   return (
-    <div className="my-24">
+    <div className="my-24 container mx-auto sm:px-16 px-6">
       <div className="flex flex-col items-center">
         <h1 className="text-primaryBlue text-4xl font-bold leading-[66px] mb-4">
           About

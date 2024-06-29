@@ -1,5 +1,6 @@
 const AcademicFoundation = () => {
   return (
+    <div className="container mx-auto sm:px-16 px-6">
     <div className="p-20 bg-[url('./assets/academic-foundation-bg.png')]">
       <div className="flex flex-col items-center justify-center">
         <h3 className="text-white text-[25px] font-bold inter">
@@ -13,6 +14,7 @@ const AcademicFoundation = () => {
           <button className="inter text-[18px] font-medium px-12 mt-8 text-white py-3 bg-[#51AB3B] rounded-[5px]">APPLY NOW</button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
