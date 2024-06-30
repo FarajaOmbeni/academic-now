@@ -4,10 +4,10 @@ import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="py-16">
-      <div className="flex justify-between ">
-        <div className="flex-1 mr-8">
-          <h2 className="text-[50px] font-bold text-white">Academic Now</h2>
-          <p className="text-[#fff] text-[14px] font-light leading-[26px]">
+      <div className="flex flex-col lg:flex-row justify-between">
+        <div className="flex-1 mr-8 mb-8 lg:mb-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Academic Now</h2>
+          <p className="text-[#fff] text-sm font-light leading-[26px]">
             The Academic Now Foundation is a consulting and training
             organization that supports public and private educational
             institutions, as well as people and groups in gaining access to
@@ -21,7 +21,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mr-8">
+        <div className="flex-1 flex flex-col md:flex-row justify-between">
+        <div className="flex flex-col lg:mr-8 mb-8 md:mb-0">
           <h4 className="text-white text-[24px] font-bold">About</h4>
           <ul className="">
             <li className="text-white text-[16px] font-normal leading-[40px]">
@@ -39,7 +40,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col mr-8">
+        <div className="flex flex-col lg:mr-8 mb-8 md:mb-0">
           <h4 className="text-white text-[24px] font-bold">Company</h4>
           <ul className="">
             <li className="text-white text-[16px] font-normal leading-[40px]">
@@ -54,7 +55,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col mr-8">
+        <div className="flex flex-col lg:mr-8 mb-8 md:mb-0">
           <h4 className="text-white text-[24px] font-bold">Contact Us</h4>
           <ul className="">
             <li className="text-white text-[16px] font-normal leading-[40px]">
@@ -70,6 +71,7 @@ const Footer = () => {
               <Link to="#">P.O. Box 303, DarEs-Salaam Tanzania</Link>
             </li>
           </ul>
+        </div>
         </div>
       </div>
     </footer>

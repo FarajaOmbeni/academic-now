@@ -14,7 +14,6 @@ const Home = () => {
       <Testimonials />
       <Divider />
       <ContactUs />
-      <Divider />
     </div>
   )
 }

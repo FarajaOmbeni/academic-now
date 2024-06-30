@@ -2,19 +2,19 @@ import { mwanaisha, quoteIcon } from "../../assets";
 
 const Testimonials = () => {
   return (
-    <div className="my-24 container mx-auto sm:px-16 px-6">
+    <div className="mt-24 mb-40 container mx-auto sm:px-16 px-6">
       <div className="flex flex-col items-center mb-4">
-        <h1 className="text-primaryBlue text-4xl font-bold leading-[66px]">
+        <h1 className="text-primaryBlue text-3xl md:text-4xl font-bold md:leading-[66px] mb-6 md:mb-0 text-center">
           What
-          <span className="text-[#1C1C1C] text-4xl font-normal leading-[66px]">
+          <span className="text-[#1C1C1C] text-3xl md:text-4xl font-normal md:leading-[66px]">
             {" "}
-            our students Say
+            our students Say 
           </span>
-          <span className="text-[#1C1C1C] text-[28px] font-normal leading-[66px]">
-            (Testimonials)
-          </span>
+          {/* <span className="text-[#1C1C1C] text-3xl md:text-4xl font-normal md:leading-[66px]">
+             (Testimonials)
+          </span> */}
         </h1>
-        <p className="text-[#333] text-[18px] font-normal leading-[26px]">
+        <p className="text-[#333] text-lg font-normal leading-[26px] text-center">
           At Academic Now foundation, we believe in empowering students to
           pursue their academic dreams with confidence. Here are some of our
           services designed to streamline your journey to studying in the US.
@@ -35,7 +35,7 @@ const Testimonials = () => {
           to broaden their horizons and pursue their academic goals.
         </p>
         <img src={mwanaisha} alt="testimonial-image" className="absolute w-[108px] h-[108px] transform -translate-x-1/2 left-1/2" />
-        <img src={quoteIcon} alt="quote icon" className="absolute top-[-15%] left-[3%] w-[54px] h-[54px]" />
+        <img src={quoteIcon} alt="quote icon" className="absolute top-[-5%] md:top-[-15%] left-[3%] w-[54px] h-[54px]" />
       </div>
     </div>
   );
