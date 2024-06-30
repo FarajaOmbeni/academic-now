@@ -156,3 +156,26 @@ export const partners = [
   },
 ];
 
+
+export const navLinks = [
+  {
+    id: "home",
+    title: "Home",
+  },
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "register",
+    title: "Register",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+  {
+    id: "whystudy",
+    title: "Why study in the US",
+  },
+];

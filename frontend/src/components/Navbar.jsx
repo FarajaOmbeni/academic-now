@@ -1,58 +1,73 @@
 import { useState } from "react";
 import { logo } from "../assets";
 import { Link } from "react-router-dom";
+import { IoMdMenu } from "react-icons/io";
+import { IoClose } from "react-icons/io5";
+import { navLinks } from "../constants";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
+  const [toggle, setToggle] = useState(false);
+
   return (
     <section className="container mx-auto sm:px-16 px-6">
-    <nav className="w-full py-4 flex items-center justify-between">
-      <div className="">
-        <img src={logo} alt="" className="w-[100px]" />
-      </div>
-      <ul className="flex items-center">
-        <li
-          className={`font-semibold text-[20px] ${
-            active === "Home" ? "text-black" : "text-linkColor"
-          } mr-10`}
-          onClick={() => setActive("Home")}
-        >
-          <Link to="/">Home</Link>
-        </li>
-        <li
-          className={`font-semibold text-[20px] ${
-            active === "About" ? "text-black" : "text-linkColor"
-          } mr-10`}
-          onClick={() => setActive("About")}
-        >
-          <Link to="/about">About Us</Link>
-        </li>
-        <li
-          className={`font-semibold text-[20px] ${
-            active === "Register" ? "text-black" : "text-linkColor"
-          } mr-10`}
-          onClick={() => setActive("Register")}
-        >
-          <Link to="/register">Register Here</Link>
-        </li>
-        <li
-          className={`font-semibold text-[20px] ${
-            active === "Contact" ? "text-black" : "text-linkColor"
-          } mr-10`}
-          onClick={() => setActive("Contact")}
-        >
-          <Link to="/contact">Contact Us</Link>
-        </li>
-        <li
-          className={`font-semibold text-[20px] ${
-            active === "Whyus" ? "text-black" : "text-linkColor"
-          } mr-10`}
-          onClick={() => setActive("Whyus")}
-        >
-          <Link to="/whystudy">Why study in the US</Link>
-        </li>
-      </ul>
-    </nav>
+      <nav className="w-full py-4 flex items-center justify-between navbar">
+        <div className="">
+          <img src={logo} alt="" className="w-[100px]" />
+        </div>
+
+        <ul className="hidden md:flex justify-end items-center flex-1">
+          {navLinks.map((nav, index) => (
+            <li
+              key={nav.id}
+              className={`
+          font-semibold
+          cursor-pointer
+          text-base
+          ${active === nav.title ? "text-black" : "text-linkColor"}
+          ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}
+          `}
+              onClick={() => setActive(nav.title)}
+            >
+              <Link to={`/${nav.id}`}>{nav.title}</Link>
+            </li>
+          ))}
+        </ul>
+
+        <div className="md:hidden flex flex-1 justify-end items-center">
+          <button onClick={() => setToggle((prev) => !prev)}>
+            {toggle ? (
+              <IoClose style={{ width: "30px", height: "30px" }} />
+            ) : (
+              <IoMdMenu style={{ width: "30px", height: "30px" }} />
+            )}
+          </button>
+
+          <div
+            className={`${toggle ? "flex" : "hidden"}
+        p-6 footer-bg absolute top-20 right-0
+        mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          >
+            <ul className="list-none flex flex-col justify-end items-center flex-1">
+              {navLinks.map((nav, index) => (
+                <li
+                  key={nav.id}
+                  className={`
+          font-semibold
+          cursor-pointer
+          text-base
+          ${active === nav.title ? "text-[#FFCF59]" : "text-white"}
+          ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}
+          `}
+                  onClick={() => setActive(nav.title)}
+                >
+                  <Link to={`/${nav.id}`}>{nav.title}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </nav>
     </section>
   );
 };
