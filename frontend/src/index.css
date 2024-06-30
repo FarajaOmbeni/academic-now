@@ -16,15 +16,21 @@
 img {
   width: 100%;
 }
-html, body {
-  overflow-x: hidden; 
+html,
+body {
+  overflow-x: hidden;
 }
 body {
   font-family: "Poppins", sans-serif;
 }
 
 .footer-bg {
-  background: linear-gradient(90deg, #086d1e 0%, #303a9e 100%);
+  /* background: linear-gradient(90deg, #086d1e 0%, #303a9e 100%); */
+  /* background: rgb(82,95,225);
+  background: linear-gradient(45deg, rgba(82,95,225,1) 71%, rgba(255,207,89,1) 100%); */
+  
+    background: linear-gradient(135deg, #525FE1 40%, #ffcf59 100%);
+  
 }
 .divider {
   height: 4px;

@@ -37,9 +37,9 @@ const Navbar = () => {
         <div className="md:hidden flex flex-1 justify-end items-center">
           <button onClick={() => setToggle((prev) => !prev)}>
             {toggle ? (
-              <IoClose style={{ width: "30px", height: "30px" }} />
+              <IoClose style={{ width: "50px", height: "50px" }} />
             ) : (
-              <IoMdMenu style={{ width: "30px", height: "30px" }} />
+              <IoMdMenu style={{ width: "50px", height: "50px" }} />
             )}
           </button>
 
@@ -48,7 +48,7 @@ const Navbar = () => {
         p-6 footer-bg absolute top-20 right-0
         mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
           >
-            <ul className="list-none flex flex-col justify-end items-center flex-1">
+            <ul className="list-none flex flex-col justify-end items-start flex-1 gap-6 ">
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}

@@ -6,8 +6,8 @@ const EffortlessEnrollment = () => {
     <section className="">
       <div className="bg-[#FFCF59] mb-24">
         <div className="flex flex-col lg:flex-row">
-          <div className="mb-8 lg:mb-0">
-            <img src={enrollmentImage} alt="enrollment image" />
+          <div className="mb-8 lg:mb-0 flex justify-center items-center pt-6">
+            <img src={enrollmentImage} alt="enrollment image" className="w-[60%] lg:w-full"/>
           </div>
           <div className="px-6">
             <h4 className="text-3xl md:text-4xl lg:text-5xl font-bold lg:leading-[66px] text-[#1C1C1C] mb-12 mt-6">

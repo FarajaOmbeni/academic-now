@@ -16,7 +16,7 @@ const ContactUs = () => {
 
         {/* box */}
         <div className="flex flex-col lg:flex-row gap-4 bg-white">
-          <div className="bg-[url('./assets/contactGradient.png')] bg-cover px-6 py-12 w-full lg:w-[40%]">
+          <div className="footer-bg bg-cover px-6 py-12 w-full lg:w-[40%]">
             <div className="mb-8">
               <h4 className="text-white text-2xl sm:text-3xl font-semibold">
                 Contact Information
@@ -172,7 +172,7 @@ const ContactUs = () => {
               </div>
 
               <div className="flex items-center justify-end mt-6">
-                <button className="text-[white] font-medium text-lg md:text-xl button-contact px-4 p-2 md:px-8 md:py-4">
+                <button className="text-[white] font-medium text-lg md:text-xl footer-bg px-4 p-2 md:px-8 md:py-4">
                   Send Message
                 </button>
               </div>
