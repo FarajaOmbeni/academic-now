@@ -109,7 +109,7 @@ export const services = [
     id: 1,
     content:
       "Our program simplifies the complex application process, guiding students through each step to ensure a smooth and efficient experience.",
-    title: "Streamlined Applicatios",
+    title: "Streamlined Applications",
     img: streamlinedApplications,
   },
   {
@@ -124,6 +124,33 @@ export const services = [
     content:
       "We offer comprehensive visa support, necessary documentation and providing guidance throughout the visa application process, ensuring a stress-free journey to studying in the US.",
     title: "Visa Support",
+    img: visaSupport,
+  },
+];
+
+export const expertise = [
+  {
+    id: 1,
+    content:
+      "Klevin is an experienced writer and educator with a focus on admissions essays. He has helped numerous students craft compelling essays that showcase their unique strengths leading to successful admissions.",
+    title: "Klevin Injera",
+    role: "Essay Guidance Expert",
+    img: streamlinedApplications,
+  },
+  {
+    id: 2,
+    content:
+      "With a background in international relations, Max brings a wealth of knowledge and experience to our visa support team. His dedication to helping students navigate the visa process ensure a smooth application",
+    title: "Maxwell Mugo",
+    role: "Visa Specialist",
+    img: expertEssay,
+  },
+  {
+    id: 3,
+    content:
+      "Teresia holds a Master's degree in Education and has over 10 years of experience in guiding students towards their academic goals. Her passion for education make her a valuable asset.",
+    title: "Teresia Kimani",
+    role: "Academic Advisor",
     img: visaSupport,
   },
 ];

@@ -1,11 +1,10 @@
-import { ContactIntro, ContactUs, Divider } from "../components"
+import { ContactIntro, ContactUs } from "../components"
 
 const Contact = () => {
   return (
     <div>
       <ContactIntro />
       <ContactUs />
-      <Divider />
     </div>
   )
 }

@@ -2,7 +2,7 @@ const RegistrationForm = () => {
   return (
     <div className="container mx-auto sm:px-16 px-6">
       <div>
-        <h3 className="text-[#FF7162] montserrat text-[30px] font-extrabold leading-[54px] mt-4">
+        <h3 className="text-[#FF7162] montserrat text-2xl md:text-3xl font-extrabold leading-[54px] mt-4">
           Registration Form - Personal Info
         </h3>
         <p className="text-[18px] leading-[32px] text-[#767676] font-normal mb-6 rounded-mplus">
@@ -13,9 +13,9 @@ const RegistrationForm = () => {
 
       {/* Actual form starts here */}
       <div className="">
-        <form action="" method="post">
+        <form action="" className="w-full">
           <div className="mb-8 rounded-[30px] bg-customBlue p-6">
-            <div className="flex mb-12 gap-6">
+            <div className="flex flex-col md:flex-row mb-12 gap-6">
               <div className="flex flex-col w-full">
                 <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
                   First Name
@@ -23,7 +23,7 @@ const RegistrationForm = () => {
                 <input
                   type="text"
                   placeholder="Mwanaisha"
-                  className="bg-white px-3 py-4 rounded-3xl firstInput"
+                  className="bg-white w-full px-3 py-4 rounded-3xl firstInput"
                 ></input>
               </div>
 
@@ -34,7 +34,7 @@ const RegistrationForm = () => {
                 <input
                   type="text"
                   placeholder="Babu"
-                  className="bg-white px-3 py-4 rounded-3xl firstInput"
+                  className="bg-white w-full px-3 py-4 rounded-3xl firstInput"
                 ></input>
               </div>
               <div className="flex flex-col w-full">
@@ -44,17 +44,17 @@ const RegistrationForm = () => {
                 <input
                   type="text"
                   placeholder="Chidzuga"
-                  className="bg-white px-3 py-4 rounded-3xl firstInput"
+                  className="bg-white w-full px-3 py-4 rounded-3xl firstInput"
                 ></input>
               </div>
             </div>
 
-            <div className="flex gap-6 mb-4">
+            <div className="flex flex-col md:flex-row mb-12 gap-6">
               <div className="flex flex-col w-full">
                 <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
                   Gender
                 </label>
-                <select className="bg-white px-3 py-4 rounded-3xl firstInput">
+                <select className="bg-white w-full px-3 py-4 rounded-3xl firstInput">
                   <option value="">Male</option>
                   <option value="Female">Female</option>
                   <option value="Other">Other</option>
@@ -89,7 +89,7 @@ const RegistrationForm = () => {
             <h5 className="mb-6 text-black text-[18px] font-extrabold leading-[24px] montserrat">
               Contact Information
             </h5>
-            <div className="flex mb-12 gap-6">
+            <div className="flex flex-col md:flex-row mb-12 gap-6">
               <div className="flex flex-col w-full">
                 <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
                   Choose Country
@@ -124,7 +124,7 @@ const RegistrationForm = () => {
               </div>
             </div>
 
-            <div className="flex gap-6 mb-4">
+            <div className="flex flex-col md:flex-row mb-12 gap-6">
               <div className="flex flex-col w-full">
                 <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
                   Email Address
@@ -170,8 +170,8 @@ GPA or Equivalent (Optional)" className="p-4 rounded-[20px] firstInput"></textar
             <div className="mt-12 mb-6 w-full bg-[#767676] h-[1px]"></div>
           </div>
 
-          <div className="mb-8">
-            <button className="bg-[#2E3899] text-[24px] leading-[24px] font-extrabold rounded-mplus rounded-[40px] px-12 py-6 text-white">Register Now</button>
+          <div className="mb-8 flex justify-center items-center md:justify-start">
+            <button className="bg-[#2E3899] text-base sm:text-lg md:text-xl lg:text-2xl lg:leading-[24px] font-extrabold rounded-mplus rounded-[40px] px-4 py-2 md:px-8 md:py-4 lg:px-12 lg:py-6 text-white">Register Now</button>
           </div>
         </form>
       </div>

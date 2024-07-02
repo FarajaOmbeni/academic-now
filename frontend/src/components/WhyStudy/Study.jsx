@@ -5,9 +5,9 @@ const Study = () => {
   return (
     <div className="container mx-auto sm:px-16 px-6"> 
       <div className="flex flex-col items-center mt-4 mb-8">
-        <h1 className="text-primaryBlue text-[52px] font-bold leading-[66px]">
+        <h1 className="text-primaryBlue text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold lg:leading-[66px]">
           Why Study in
-          <span className="text-[#1C1C1C] text-[52px] font-bold leading-[66px]">
+          <span className="text-[#1C1C1C] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold lg:leading-[66px]">
             {" "}
             US
           </span>
@@ -15,10 +15,10 @@ const Study = () => {
       </div>
 
       {/* cards section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-8 lg:gap-4">
         {WhyStudySection.slice(0, 3).map((section, index) => (
           <div
-            className="border rounded-2xl border-linkColor flex flex-col items-center justify-center p-4"
+            className="border rounded-2xl border-linkColor flex flex-col items-center justify-center p-4 bg-white partners-shadow"
             key={index}
           >
             <img
@@ -42,14 +42,14 @@ const Study = () => {
         ))}
       </div>
 
-      <div className="mt-12 flex justify-center items-center w-[900px] mx-auto mb-20">
-        <h4 className="text-[#333] text-center text-[32px] font-normal leading-[26px]">
+      <div className="mt-12 flex justify-center items-center mb-20">
+        <h4 className="text-[#333] text-center text-xl sm:text-2xl md:text-3xl font-normal leading-[26px]">
           Access world-class education and diverse cultural experiences, setting
           the stage for personal and professional growth
         </h4>
       </div>
 
-      <div className="flex justify-center items-center w-[900px] mx-auto">
+      <div className="flex justify-center items-center mb-14">
         <img src={videoDiscussion} alt="discussion" />
       </div>
     </div>

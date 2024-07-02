@@ -28,6 +28,7 @@ import playIcon from "./playIcon.svg";
 import testimonialBg from "./testimonialBg.png";
 import contactGradient from "./contactGradient.png";
 import quoteIcon from "./quote-icon.svg";
+import academicFoundationImg from "./academic-foundation-img.jpg";
 export {
     logo,
     Student,
@@ -58,5 +59,6 @@ export {
     emailIcon,
     location,
     contactGradient,
-    quoteIcon
+    quoteIcon,
+    academicFoundationImg
 }
