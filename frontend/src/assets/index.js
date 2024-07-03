@@ -29,6 +29,11 @@ import testimonialBg from "./testimonialBg.png";
 import contactGradient from "./contactGradient.png";
 import quoteIcon from "./quote-icon.svg";
 import academicFoundationImg from "./academic-foundation-img.jpg";
+import flowerSvg from "./flowerSvg.svg";
+import yellowCircle from "./yellowCircle.svg";
+import roundDoughut from "./roundDoughut.svg";
+import halfEclipse from "./halfEclipse.png";
+
 export {
     logo,
     Student,
@@ -60,5 +65,9 @@ export {
     location,
     contactGradient,
     quoteIcon,
-    academicFoundationImg
+    academicFoundationImg,
+    flowerSvg,
+    yellowCircle,
+    roundDoughut,
+    halfEclipse
 }

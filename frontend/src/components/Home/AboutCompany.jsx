@@ -1,8 +1,8 @@
-import { aboutCompany, playIcon } from "../../assets";
+import { aboutCompany, halfEclipse, playIcon } from "../../assets";
 
 const AboutCompany = () => {
   return (
-    <div className="my-24 container mx-auto sm:px-16 px-6">
+    <div className="my-24 container mx-auto sm:px-16 px-6 relative">
       <div className="flex flex-col items-center">
         <h1 className="text-primaryBlue text-3xl md:text-4xl font-bold md:leading-[66px] mb-4">
           About
@@ -20,8 +20,13 @@ const AboutCompany = () => {
       </div>
 
       <div className="relative">
-        <img src={aboutCompany} alt="students in class" />
+        <img src={aboutCompany} alt="students in class" className="z-30" />
         <img src={playIcon} className="absolute h-[116px] w-[116px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="play icon"/>
+      </div>
+
+
+      <div className="absolute left-0 top-[50%] -z-10">
+        <img src={halfEclipse} alt="eclipse image" />
       </div>
     </div>
   );

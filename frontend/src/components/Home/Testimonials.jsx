@@ -1,4 +1,5 @@
 import { mwanaisha, quoteIcon } from "../../assets";
+import YellowCircle from "../SvgComponents/YellowCircle";
 
 const Testimonials = () => {
   return (
@@ -8,11 +9,8 @@ const Testimonials = () => {
           What
           <span className="text-[#1C1C1C] text-3xl md:text-4xl font-normal md:leading-[66px]">
             {" "}
-            our students Say 
+            our students Say
           </span>
-          {/* <span className="text-[#1C1C1C] text-3xl md:text-4xl font-normal md:leading-[66px]">
-             (Testimonials)
-          </span> */}
         </h1>
         <p className="text-[#333] text-lg font-normal leading-[26px] text-center">
           At Academic Now foundation, we believe in empowering students to
@@ -36,6 +34,13 @@ const Testimonials = () => {
         </p>
         <img src={mwanaisha} alt="testimonial-image" className="absolute w-[108px] h-[108px] transform -translate-x-1/2 left-1/2" />
         <img src={quoteIcon} alt="quote icon" className="absolute top-[-5%] md:top-[-15%] left-[3%] w-[54px] h-[54px]" />
+
+        <div className="absolute right-[5%] top-[-20%] -z-10">
+        <YellowCircle width={80} height={80}/>
+        </div>
+        <div className="absolute left-[5%] -z-10">
+        <YellowCircle width={80} height={80}/>
+        </div>
       </div>
     </div>
   );

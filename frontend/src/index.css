@@ -105,7 +105,7 @@ body {
 .hero-bg {
   background-image: url("data:image/svg+xml,%3Csvg id='10015.io' viewBox='0 0 480 480' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' %3E%3Cpath fill='%23ffcf59' d='M399.5,273Q422,306,387,320Q352,334,334,352.5Q316,371,288.5,365.5Q261,360,232.5,401Q204,442,175.5,421.5Q147,401,105,395Q63,389,51.5,351Q40,313,60.5,276.5Q81,240,58,203Q35,166,51,130.5Q67,95,112.5,97Q158,99,182.5,77Q207,55,240.5,50Q274,45,290.5,84Q307,123,358.5,110Q410,97,424.5,132.5Q439,168,408,204Q377,240,399.5,273Z' /%3E%3C/svg%3E");
   background-repeat: no-repeat no-repeat;
-  background-position: center right;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -144,4 +144,11 @@ body {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+/* SVG ICONS STYLES//////////////// */
+.purple-flower{
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
 }
