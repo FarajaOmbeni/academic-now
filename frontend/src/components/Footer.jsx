@@ -22,23 +22,6 @@ const Footer = () => {
         </div>
 
         <div className="flex-1 flex flex-col md:flex-row justify-between">
-        <div className="flex flex-col lg:mr-8 mb-8 md:mb-0">
-          <h4 className="text-white text-[24px] font-bold">About</h4>
-          <ul className="">
-            <li className="text-white text-[16px] font-normal leading-[40px]">
-              <Link to="#">Menu</Link>
-            </li>
-            <li className="text-white text-[16px] font-normal leading-[40px]">
-              <Link to="#">Features</Link>
-            </li>
-            <li className="text-white text-[16px] font-normal leading-[40px]">
-              <Link to="#">News & Blogs</Link>
-            </li>
-            <li className="text-white text-[16px] font-normal leading-[40px]">
-              <Link to="#">Help & Supports</Link>
-            </li>
-          </ul>
-        </div>
 
         <div className="flex flex-col lg:mr-8 mb-8 md:mb-0">
           <h4 className="text-white text-[24px] font-bold">Company</h4>

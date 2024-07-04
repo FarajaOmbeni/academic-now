@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import { services } from "../../constants";
 
 const OurServices = () => {
@@ -30,11 +31,15 @@ const OurServices = () => {
                 <h5 className="text-[#1C1C1C] text-xl md:text-2xl font-semibold text-center">
                   {service.title}
                 </h5>
-                <p className="text-center mb-12 text-[#4D4D4D] text-sm leading-[20px]">{service.content}</p>
+                <p className="text-center mb-12 text-[#4D4D4D] text-sm leading-[20px]">
+                  {service.content}
+                </p>
               </div>
-              <button className="text-[#1C1C1C] text-[14px] font-semibold bg-orangeColor rounded-[13px] px-6 py-3 absolute transform -translate-x-1/2 left-1/2 bottom-[-5%]">
-                GET STARTED
-              </button>
+              <HashLink to="/register#registration">
+                <button className="text-[#1C1C1C] text-[14px] font-semibold bg-orangeColor rounded-[13px] px-6 py-3 absolute transform -translate-x-1/2 left-1/2 bottom-[-5%]">
+                  GET STARTED
+                </button>
+              </HashLink>
             </div>
           ))}
         </div>

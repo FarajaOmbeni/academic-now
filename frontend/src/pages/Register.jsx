@@ -1,13 +1,19 @@
 import { EffortlessEnrollment, Introduction, RegistrationForm } from "../components"
 
-const About = () => {
+const Register = () => {
   return (
     <div>
-      <Introduction />
-      <EffortlessEnrollment />
-      <RegistrationForm />
+      <div id="introduction">
+        <Introduction />
+      </div>
+      <div id="enrollment">
+        <EffortlessEnrollment />
+      </div>
+      <div id="registration">
+        <RegistrationForm />
+      </div>
     </div>
   )
 }
 
-export default About
+export default Register

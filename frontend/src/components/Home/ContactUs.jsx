@@ -25,7 +25,7 @@ const ContactUs = () => {
                 Say something to start a live chat!
               </p>
             </div>
-            <div className="flex items-center gap-4 mb-6 mt-32">
+            <div className="flex items-center gap-4 mb-6 mt-20 md:mt-32">
               <img
                 src={phoneCall}
                 alt="contact icon"

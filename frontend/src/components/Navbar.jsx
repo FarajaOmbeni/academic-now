@@ -1,13 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { logo } from "../assets";
 import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { navLinks } from "../constants";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
+  const location = useLocation()
+
+
+  useEffect(() => {
+    const currentPath = location.pathname;
+    const currentPage = currentPath.split("/")[1];
+    setActive(currentPage || "Home");
+  }, [location]);
+  
 
   return (
     <section className="container mx-auto sm:px-16 px-6">
@@ -24,7 +34,7 @@ const Navbar = () => {
           font-semibold
           cursor-pointer
           text-base
-          ${active === nav.title ? "text-black" : "text-linkColor"}
+          ${active === nav.id ? "text-black" : "text-linkColor"}
           ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}
           `}
               onClick={() => setActive(nav.title)}
