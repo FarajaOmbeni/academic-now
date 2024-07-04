@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
 
           <div className="mt-8">
-            <button className="bg-[#FFCF59] px-4 sm:px-5 md:px-6 lg:px-6 xl:px-6 py-2 sm:py-2 md:py-3 lg:py-3 xl:py-3 rounded-2xl text-[#1C1C1C] text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl font-semibold border-none outline-none">
+            <button className="bg-orangeColor px-4 sm:px-5 md:px-6 lg:px-6 xl:px-6 py-2 sm:py-2 md:py-3 lg:py-3 xl:py-3 rounded-2xl text-[#1C1C1C] text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl font-semibold border-none outline-none transform hover:scale-110 transition-all duration-200">
               REGISTER NOW
             </button>
           </div>

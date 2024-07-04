@@ -18,7 +18,7 @@ const Study = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-8 lg:gap-4">
         {WhyStudySection.slice(0, 3).map((section, index) => (
           <div
-            className="border rounded-2xl border-linkColor flex flex-col items-center justify-center p-4 bg-white partners-shadow"
+            className=" whyus-card border rounded-2xl border-linkColor flex flex-col items-center justify-center p-4 bg-white partners-shadow"
             key={index}
           >
             <img

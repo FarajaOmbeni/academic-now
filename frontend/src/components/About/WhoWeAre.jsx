@@ -44,7 +44,7 @@ const WhoWeAre = () => {
             {expertise.map((experience) => (
               <div
                 key={experience.id}
-                className="flex flex-col items-center partners-shadow"
+                className="whyus-card flex flex-col items-center partners-shadow"
               >
                 <img src={experience.img} alt="" />
                 <div className="p-2">

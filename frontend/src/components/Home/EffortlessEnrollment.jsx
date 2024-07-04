@@ -4,7 +4,7 @@ import { enrollment } from "../../constants";
 const EffortlessEnrollment = () => {
   return (
     <section className="">
-      <div className="bg-[#FFCF59] mb-24">
+      <div className="bg-orangeColor mb-24">
         <div className="flex flex-col lg:flex-row">
           <div className="mb-8 lg:mb-0 flex justify-center items-center pt-6 bg-[url('./assets/halfEclipse.png')] bg-no-repeat bg-cover bg-left-top">
             <img src={enrollmentImage} alt="enrollment image" className="w-[60%] lg:w-full"/>

@@ -6,6 +6,7 @@ export default {
       colors: {
         linkColor: "#808080",
         primaryBlue: "#525FE1",
+        orangeColor: "#FFCF59",
         customBlue: "rgba(82, 95, 225, 0.16)",
       },
       backgroundImage: {

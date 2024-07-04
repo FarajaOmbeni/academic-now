@@ -179,7 +179,7 @@ GPA or Equivalent (Optional)"
             </div>
 
             <div className="mb-8 flex justify-center items-center md:justify-start">
-              <button className="bg-[#2E3899] text-base sm:text-lg md:text-xl lg:text-2xl lg:leading-[24px] font-extrabold rounded-mplus rounded-[40px] px-4 py-2 md:px-8 md:py-4 lg:px-12 lg:py-6 text-white">
+              <button className="bg-[#2E3899] text-base sm:text-lg md:text-xl lg:text-2xl lg:leading-[24px] font-extrabold rounded-mplus rounded-[40px] px-4 py-2 md:px-8 md:py-4 lg:px-12 lg:py-6 text-white transform hover:scale-110 transition-all duration-200">
                 Register Now
               </button>
             </div>

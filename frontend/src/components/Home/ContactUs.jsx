@@ -172,7 +172,7 @@ const ContactUs = () => {
               </div>
 
               <div className="flex items-center justify-end mt-6">
-                <button className="text-[white] font-medium text-lg md:text-xl footer-bg px-4 p-2 md:px-8 md:py-4">
+                <button className="text-[white] font-medium text-lg md:text-xl footer-bg px-4 p-2 md:px-8 md:py-4 transform hover:scale-110 transition-all duration-200">
                   Send Message
                 </button>
               </div>
