@@ -46,7 +46,7 @@ const Navbar = () => {
           <div
             className={`${toggle ? "flex" : "hidden"}
         p-6 footer-bg absolute top-20 right-0
-        mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+        mx-4 my-2 min-w-[140px] rounded-xl sidebar z-20`}
           >
             <ul className="list-none flex flex-col justify-end items-start flex-1 gap-6 ">
               {navLinks.map((nav, index) => (

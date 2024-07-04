@@ -33,6 +33,7 @@ import flowerSvg from "./flowerSvg.svg";
 import yellowCircle from "./yellowCircle.svg";
 import roundDoughut from "./roundDoughut.svg";
 import halfEclipse from "./halfEclipse.png";
+import greenEcipse from "./greenEcipse.png";
 
 export {
     logo,
@@ -69,5 +70,6 @@ export {
     flowerSvg,
     yellowCircle,
     roundDoughut,
-    halfEclipse
+    halfEclipse,
+    greenEcipse
 }

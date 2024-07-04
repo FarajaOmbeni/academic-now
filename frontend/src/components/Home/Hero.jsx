@@ -35,14 +35,14 @@ const Hero = () => {
           <img src={Student} alt="" className="w-full h-auto" />
         </div>
 
-        <div className="absolute bottom-[20%] left-[40%]">
+        <div className="absolute bottom-[-80px] md:bottom-[5%] left-[40%]">
           <Flower
             width={70}
             height={70}
             fillColor="#650155"
           />
         </div>
-        <div className="absolute left-[20%] bottom-[15%] ">
+        <div className="absolute left-[20%] md:bottom-[-70px] 2xl:bottom-[15%] hidden md:block">
           <Flower
             width={50}
             height={50}
@@ -52,11 +52,11 @@ const Hero = () => {
       </div>
     </div>
 
-    <div className="">
+    <div className="absolute left-[-50px] bottom-0">
     <YellowCircle width={80} height={80}/>
     </div>
 
-    <div className="absolute right-0 bottom-0 -rotate-180">
+    <div className="absolute right-[-40px] bottom-0">
     <YellowCircle width={80} height={80}/>
     </div>
 

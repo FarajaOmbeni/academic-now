@@ -1,13 +1,13 @@
 export default function YellowCircle({ width, height }) {
   return (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}
-      viewBox="0 0 111 110"
-      fill="#FFCF59"
-      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 75 75"
+      fill="none"
     >
-      <circle id="Ellipse 1" cx="29.0522" cy="81" r="81" fill="#FFCF59" />
+      <circle cx="37.0522" cy="37.6958" r="37" fill="#FFCF59" />
     </svg>
   );
 }
