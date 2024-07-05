@@ -20,11 +20,11 @@ const OurServices = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8 lg:gap-4">
           {services.map((service) => (
             <div
               key={service.id}
-              className="whyus-card relative flex flex-col items-center bg-white"
+              className="whyus-card relative flex flex-col items-center bg-white md:mb-8 lg:mb-0"
             >
               <img src={service.img} alt="" />
               <div className="p-2">

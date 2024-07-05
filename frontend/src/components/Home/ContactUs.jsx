@@ -1,22 +1,24 @@
 import { emailIcon, location, phoneCall } from "../../assets";
 import Divider from "../Divider";
 
-const ContactUs = () => {
+const ContactUs = ({ showHeading = true }) => {
   return (
     <div className="mt-24 pt-16 bg-[#F5F5F5]">
       <div className="container mx-auto sm:px-16 px-6">
-        <div className="flex flex-col items-center mb-8">
-          <h2 className="text-[#2A3280] text-2xl md:text-3xl mb-2 font-bold">
-            Contact Us
-          </h2>
-          <p className="text-[#717171] text-base md:text-lg font-normal">
-            Any question or remarks? Just write us a message!
-          </p>
-        </div>
+        {showHeading && (
+          <div className="flex flex-col items-center mb-8">
+            <h2 className="text-[#2A3280] text-2xl md:text-3xl mb-2 font-bold">
+              Contact Us
+            </h2>
+            <p className="text-[#717171] text-base md:text-lg font-normal">
+              Any question or remarks? Just write us a message!
+            </p>
+          </div>
+        )}
 
         {/* box */}
         <div className="flex flex-col lg:flex-row gap-4 bg-white">
-          <div className="footer-bg bg-cover px-6 py-12 w-full lg:w-[40%]">
+          <div className="footer-bg bg-cover px-6 py-12 w-full lg:w-[40%] md:text-center lg:text-start">
             <div className="mb-8">
               <h4 className="text-white text-2xl sm:text-3xl font-semibold">
                 Contact Information
@@ -25,7 +27,7 @@ const ContactUs = () => {
                 Say something to start a live chat!
               </p>
             </div>
-            <div className="flex items-center gap-4 mb-6 mt-20 md:mt-32">
+            <div className="flex items-center md:justify-center lg:justify-start gap-4 mb-6 mt-20 lg:mt-32 ">
               <img
                 src={phoneCall}
                 alt="contact icon"
@@ -35,7 +37,7 @@ const ContactUs = () => {
                 Tel. (+255) 7123-567-89
               </p>
             </div>
-            <div className="flex items-center gap-4 mb-6">
+            <div className="flex items-center md:justify-center lg:justify-start gap-4 mb-6">
               <img
                 src={emailIcon}
                 alt="contact icon"
@@ -45,7 +47,7 @@ const ContactUs = () => {
                 info@acaademicnow.org
               </p>
             </div>
-            <div className="flex items-center gap-4 mb-6">
+            <div className="flex items-center md:justify-center lg:justify-start gap-4 mb-6">
               <img
                 src={location}
                 alt="contact icon"

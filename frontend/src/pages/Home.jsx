@@ -13,7 +13,7 @@ const Home = () => {
       <Divider />
       <Testimonials />
       <Divider />
-      <ContactUs />
+      <ContactUs showHeading={true}/>
     </div>
   )
 }

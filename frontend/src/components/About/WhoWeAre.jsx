@@ -40,7 +40,7 @@ const WhoWeAre = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8 lg:gap-4">
             {expertise.map((experience) => (
               <div
                 key={experience.id}

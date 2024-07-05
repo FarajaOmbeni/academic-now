@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container mx-auto sm:px-16 px-6">
         <div className="flex flex-col md:flex-row justify-between relative">
           {/* heading */}
-          <div className="flex flex-col md:flex-1 mt-6 md:mt-14 md:mb-0 text-center md:text-start">
+          <div className="flex flex-col md:flex-1 mt-6 md:mt-14 md:mb-0 text-center lg:text-start">
             <div className="">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold lg:leading-[66px] text-primaryBlue">
                 OPENING DOORS
@@ -38,7 +38,7 @@ const Hero = () => {
             <img src={Student} alt="" className="w-full h-auto" />
           </div>
 
-          <div className="absolute bottom-[-80px] md:bottom-[5%] left-[40%]">
+          <div className="absolute bottom-[-80px] md:bottom-[-80px] lg:bottom-[5%] left-[40%]">
             <Flower width={70} height={70} fillColor="#650155" />
           </div>
           <div className="absolute left-[20%] md:bottom-[-70px] 2xl:bottom-[15%] hidden md:block">

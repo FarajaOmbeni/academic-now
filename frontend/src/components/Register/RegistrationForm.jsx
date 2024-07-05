@@ -18,7 +18,7 @@ const RegistrationForm = () => {
             <div className="mb-8 rounded-[30px] bg-customBlue p-6">
               <div className="flex flex-col md:flex-row mb-12 gap-6">
                 <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                     First Name
                   </label>
                   <input
@@ -29,7 +29,7 @@ const RegistrationForm = () => {
                 </div>
 
                 <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                     Middle Name
                   </label>
                   <input
@@ -39,7 +39,7 @@ const RegistrationForm = () => {
                   ></input>
                 </div>
                 <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                     Last Name
                   </label>
                   <input
@@ -52,7 +52,7 @@ const RegistrationForm = () => {
 
               <div className="flex flex-col md:flex-row mb-12 gap-6">
                 <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                     Gender
                   </label>
                   <select className="bg-white w-full px-3 py-4 rounded-3xl firstInput">
@@ -62,7 +62,7 @@ const RegistrationForm = () => {
                   </select>
                 </div>
                 <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                     Date of Birth
                   </label>
                   <input
@@ -72,7 +72,7 @@ const RegistrationForm = () => {
                   ></input>
                 </div>
                 <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                     Year of Study
                   </label>
                   <select className="bg-white px-3 py-4 rounded-3xl firstInput">
@@ -92,7 +92,7 @@ const RegistrationForm = () => {
               </h5>
               <div className="flex flex-col md:flex-row mb-12 gap-6">
                 <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                     Choose Country
                   </label>
                   <select className="bg-white px-3 py-4 rounded-3xl firstInput">
@@ -104,7 +104,7 @@ const RegistrationForm = () => {
                   </select>
                 </div>
                 <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                     City
                   </label>
                   <input
@@ -114,7 +114,7 @@ const RegistrationForm = () => {
                   ></input>
                 </div>
                 <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                     Address
                   </label>
                   <input
@@ -127,7 +127,7 @@ const RegistrationForm = () => {
 
               <div className="flex flex-col md:flex-row mb-12 gap-6">
                 <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                     Email Address
                   </label>
                   <input
@@ -137,7 +137,7 @@ const RegistrationForm = () => {
                   ></input>
                 </div>
                 <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                     Phone Number
                   </label>
                   <input
@@ -147,7 +147,7 @@ const RegistrationForm = () => {
                   ></input>
                 </div>
                 <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                     Education Qualification
                   </label>
                   <select className="bg-white px-3 py-4 rounded-3xl firstInput">
@@ -160,7 +160,7 @@ const RegistrationForm = () => {
                 </div>
               </div>
               <div className="flex flex-col w-full">
-                <label className="text-[16px] leading-[22px] font-extrabold text-[#767676] mb-4 rounded-mplus">
+                <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
                   Additional Academic Qualification
                 </label>
                 <textarea

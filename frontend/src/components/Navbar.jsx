@@ -26,7 +26,7 @@ const Navbar = () => {
           <img src={logo} alt="" className="w-[100px]" />
         </div>
 
-        <ul className="hidden md:flex justify-end items-center flex-1">
+        <ul className="hidden lg:flex justify-end items-center flex-1">
           {navLinks.map((nav, index) => (
             <li
               key={nav.id}
@@ -44,7 +44,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="md:hidden flex flex-1 justify-end items-center">
+        <div className="lg:hidden flex flex-1 justify-end items-center">
           <button onClick={() => setToggle((prev) => !prev)}>
             {toggle ? (
               <IoClose style={{ width: "50px", height: "50px" }} />

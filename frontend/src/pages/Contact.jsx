@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div>
       <ContactIntro />
-      <ContactUs />
+      <ContactUs showHeading={false}/>
     </div>
   )
 }

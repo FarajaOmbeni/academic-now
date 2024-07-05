@@ -12,7 +12,7 @@ const AcademicFoundation = () => {
           </p>
 
           <div className="">
-            <button className="inter text-[18px] font-medium px-12 mt-8 text-white py-3 bg-[#51AB3B] rounded-[5px] transform hover:scale-110 transition-all duration-200">
+            <button className="inter text-[18px] font-medium px-12 mt-8 text-black py-3 bg-orangeColor rounded-[5px] transform hover:scale-110 transition-all duration-200">
               APPLY NOW
             </button>
           </div>
