@@ -27,7 +27,7 @@ const ContactUs = ({ showHeading = true }) => {
                 Say something to start a live chat!
               </p>
             </div>
-            <div className="flex items-center md:justify-center lg:justify-start gap-4 mb-6 mt-20 lg:mt-32 ">
+            <div className="flex items-center md:justify-center lg:justify-start gap-4 mb-6 mt-20 lg:mt-32">
               <img
                 src={phoneCall}
                 alt="contact icon"

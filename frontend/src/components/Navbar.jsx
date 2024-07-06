@@ -10,6 +10,22 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const location = useLocation()
+  const navRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setToggle(false);
+      }
+    };
+
+    // Bind the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [navRef]);
 
 
   useEffect(() => {
@@ -20,7 +36,7 @@ const Navbar = () => {
   
 
   return (
-    <section className="container mx-auto sm:px-16 px-6">
+    <section ref={navRef} className="container mx-auto sm:px-16 px-6">
       <nav className="w-full py-4 flex items-center justify-between navbar">
         <div className="">
           <img src={logo} alt="" className="w-[100px]" />
@@ -66,7 +82,7 @@ const Navbar = () => {
           font-semibold
           cursor-pointer
           text-base
-          ${active === nav.title ? "text-[#FFCF59]" : "text-white"}
+          ${active === nav.id ? "text-[#FFCF59]" : "text-white"}
           ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}
           `}
                   onClick={() => setActive(nav.title)}
