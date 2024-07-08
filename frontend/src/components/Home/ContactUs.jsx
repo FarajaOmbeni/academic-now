@@ -1,9 +1,48 @@
 import { emailIcon, location, phoneCall } from "../../assets";
 import Divider from "../Divider";
 
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { RingLoader } from "react-spinners";
+
 const ContactUs = ({ showHeading = true }) => {
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setIsLoading(true);
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        e.target,
+        import.meta.env.VITE_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message sent successfully!");
+          e.target.reset();
+          setIsSubmitting(false);
+          setIsLoading(false);
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Error sending email.");
+          setIsSubmitting(false);
+          setIsLoading(false);
+        }
+      );
+  };
+
   return (
     <div className="mt-24 pt-16 bg-[#F5F5F5]">
+      <ToastContainer />
       <div className="container mx-auto sm:px-16 px-6">
         {showHeading && (
           <div className="flex flex-col items-center mb-8">
@@ -60,7 +99,7 @@ const ContactUs = ({ showHeading = true }) => {
           </div>
 
           <div className="mt-8 p-6 w-full lg:w-[60%]">
-            <form action="" className="w-full">
+            <form className="w-full" onSubmit={sendEmail}>
               <div className="flex flex-col md:flex-row gap-4 mb-8">
                 <div className="flex flex-col w-full">
                   <label htmlFor="name" className="mb-4">
@@ -68,7 +107,8 @@ const ContactUs = ({ showHeading = true }) => {
                   </label>
                   <input
                     type="text"
-                    id="name"
+                    id="fname"
+                    name="fname"
                     placeholder="Arthur"
                     className="w-full px-4 py-2 border border-linkColor rounded-[3px] outline-0"
                   ></input>
@@ -81,6 +121,7 @@ const ContactUs = ({ showHeading = true }) => {
                   <input
                     type="text"
                     id="lname"
+                    name="lname"
                     className="w-full px-4 py-2 border border-linkColor rounded-[3px] outline-0"
                     placeholder="Nyakundi"
                   ></input>
@@ -95,6 +136,7 @@ const ContactUs = ({ showHeading = true }) => {
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     className="w-full px-4 py-2 border border-linkColor rounded-[3px] outline-0"
                     placeholder="example@gmail.com"
                   ></input>
@@ -106,7 +148,8 @@ const ContactUs = ({ showHeading = true }) => {
                   </label>
                   <input
                     type="phone"
-                    id="name"
+                    id="phone"
+                    name="phone"
                     className="w-full px-4 py-2 border border-linkColor rounded-[3px] outline-0"
                     placeholder="+254-702-567-012"
                   ></input>
@@ -123,7 +166,7 @@ const ContactUs = ({ showHeading = true }) => {
                     <input
                       type="radio"
                       name="subject"
-                      value="General Enquiry"
+                      // value="General Enquiry"
                       className="mr-2"
                     />
                     General Enquiry
@@ -132,7 +175,7 @@ const ContactUs = ({ showHeading = true }) => {
                     <input
                       type="radio"
                       name="subject"
-                      value="Service Enquiry"
+                      // value="Service Enquiry"
                       className="mr-2"
                     />
                     Service Enquiry
@@ -141,7 +184,7 @@ const ContactUs = ({ showHeading = true }) => {
                     <input
                       type="radio"
                       name="subject"
-                      value="Office Enquiry"
+                      // value="Office Enquiry"
                       className="mr-2"
                     />
                     Office Enquiry
@@ -150,7 +193,7 @@ const ContactUs = ({ showHeading = true }) => {
                     <input
                       type="radio"
                       name="subject"
-                      value="School Enquiry"
+                      // value="School Enquiry"
                       className="mr-2"
                     />
                     School Enquiry
@@ -167,6 +210,8 @@ const ContactUs = ({ showHeading = true }) => {
                   <textarea
                     cols="10"
                     rows="5"
+                    id="message"
+                    name="message"
                     placeholder="Write your message"
                     className="p-4 border-b border-[#8D8D8D] rounded-[3px] outline-0"
                   ></textarea>
@@ -174,8 +219,15 @@ const ContactUs = ({ showHeading = true }) => {
               </div>
 
               <div className="flex items-center justify-end mt-6">
-                <button className="text-[white] font-medium text-lg md:text-xl footer-bg px-4 p-2 md:px-8 md:py-4 transform hover:scale-110 transition-all duration-200">
-                  Send Message
+                <button
+                  disabled={isSubmitting || isLoading}
+                  className={`text-[white] font-medium text-lg md:text-xl button-contact newGradient px-4 p-2 md:px-8 md:py-4 mb-6 transform transition-all duration-200 cursor-pointer ${
+                    isSubmitting
+                      ? "opacity-50"
+                      : "hover:bg-lightBlue hover:scale-110"
+                  }`}
+                >
+                  {isLoading ? <RingLoader color="#ffffff" /> : "Send Message"}
                 </button>
               </div>
             </form>
