@@ -1,5 +1,5 @@
-import { HashLink as Link } from 'react-router-hash-link';
-import { Student } from "../../assets";
+import { HashLink as Link } from "react-router-hash-link";
+import { blob, Student } from "../../assets";
 import Flower from "../SvgComponents/Flower";
 import YellowCircle from "../SvgComponents/YellowCircle";
 
@@ -7,9 +7,10 @@ const Hero = () => {
   return (
     <div className="relative">
       <div className="container mx-auto sm:px-16 px-6">
-        <div className="flex flex-col md:flex-row justify-between relative">
+        <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-0 relative">
+          
           {/* heading */}
-          <div className="flex flex-col md:flex-1 mt-6 md:mt-14 md:mb-0 text-center lg:text-start">
+          <div className="fw-full md:w-1/2 mt-8 md:mt-0 md:ml-8 space-y-9 text-center lg:text-start">
             <div className="">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold lg:leading-[66px] text-primaryBlue">
                 OPENING DOORS
@@ -34,8 +35,17 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex-1 hidden lg:block hero-bg">
+          {/* <div className="flex-1 hidden lg:block hero-bg">
             <img src={Student} alt="" className="w-full h-auto" />
+          </div> */}
+
+          <div className="relative w-full md:w-1/2">
+            <img src={blob} alt="blob" className="w-full h-full object-cover" />
+            <img
+              src={Student}
+              alt="profile"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full rounded-full"
+            />
           </div>
 
           <div className="absolute bottom-[-80px] md:bottom-[-80px] lg:bottom-[5%] left-[40%]">

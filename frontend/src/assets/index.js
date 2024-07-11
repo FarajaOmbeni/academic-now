@@ -15,6 +15,7 @@ import enrollmentImage from "./enrollment-image.png";
 import expertEssay from "./expert-essay.png";
 import flexibleTime from "./flexible-time.svg";
 import globalRecognition from "./global-recognition.svg";
+import blob from "./blob.svg";
 import harvard from "./harvard.png";
 import mwanaisha from "./mwanaisha.png";
 import purdue from "./purdue.png";
@@ -50,6 +51,7 @@ export {
     expertEssay,
     flexibleTime,
     globalRecognition,
+    blob,
     harvard,
     mwanaisha,
     purdue,

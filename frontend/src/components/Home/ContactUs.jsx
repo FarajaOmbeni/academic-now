@@ -4,10 +4,12 @@ import Divider from "../Divider";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { RingLoader } from "react-spinners";
+import { BeatLoader } from "react-spinners";
+import { useState } from "react";
 
 const ContactUs = ({ showHeading = true }) => {
-  const [formSubmitted, setFormSubmitted] = useState(false);
+  
+  // const [formSubmitted, setFormSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -227,7 +229,7 @@ const ContactUs = ({ showHeading = true }) => {
                       : "hover:bg-lightBlue hover:scale-110"
                   }`}
                 >
-                  {isLoading ? <RingLoader color="#ffffff" /> : "Send Message"}
+                  {isLoading ? <BeatLoader color="#ffffff" /> : "Send Message"}
                 </button>
               </div>
             </form>
