@@ -7,7 +7,6 @@ import {
 	Testimonials,
 	WhyStudy,
 } from '../components'
-import PartnersSection from '../components/About/PartnersSection'
 
 const Home = () => {
 	return (
@@ -35,7 +34,6 @@ const Home = () => {
 					</a>
 				</p>
 				<ContactUs showHeading={false} />
-				<PartnersSection />
 			</div>
 		</div>
 	)

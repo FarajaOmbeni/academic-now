@@ -1,5 +1,6 @@
-import { partners, expertise } from '../../constants'
+import { expertise } from '../../constants'
 import main from '../../assets/demo-videos.mp4'
+import PartnersSection from '../About/PartnersSection'
 
 const AboutCompany = () => {
 	return (
@@ -71,22 +72,7 @@ const AboutCompany = () => {
 						academic opportunities. Our network ensures that you have access to
 						top-tier education and resources.
 					</p>
-					<div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6'>
-						{partners.map((partner) => (
-							<div
-								key={partner.id}
-								className='bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg'>
-								<img
-									src={partner.img}
-									alt={partner.title}
-									className='w-full h-32 object-contain p-4'
-								/>
-								<h5 className='bg-blue-900 text-white text-center py-2 px-4 text-sm font-semibold'>
-									{partner.title}
-								</h5>
-							</div>
-						))}
-					</div>
+					<PartnersSection />
 				</section>
 			</div>
 		</div>
