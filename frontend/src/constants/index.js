@@ -158,7 +158,7 @@ export const expertise = [
 export const partners = [
 	{
 		id: 1,
-		title: 'University of Southern Carlifornia',
+		title: 'University of S. Carlifornia',
 		img: southernCalifornia,
 	},
 	{

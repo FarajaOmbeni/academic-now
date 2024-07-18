@@ -1,5 +1,6 @@
 import { partners, expertise } from '../../constants'
 import main from '../../assets/demo-videos.mp4'
+import PartnersSection from './PartnersSection'
 
 const WhoWeAre = () => {
 	return (
@@ -15,13 +16,14 @@ const WhoWeAre = () => {
 						the United States. We bridge the gap between international
 						aspirations and world-class American education.
 					</p>
+
 					<video
 						controls
 						width='50%'
 						height='auto'
 						muted
 						loop
-						className='w-full md:w-1/2 mx-auto rounded-lg overflow-hidden shadow-lg'>
+						className=' w-full md:w-1/2 mx-auto rounded-2xl  '>
 						<source src={main} type='video/mp4' />
 						Your browser does not support the video tag.
 					</video>
@@ -59,33 +61,7 @@ const WhoWeAre = () => {
 					</div>
 				</section>
 
-				<section>
-					<h2 className='text-blue-900 text-3xl md:text-4xl font-bold mb-6 text-center'>
-						Our <span className='text-yellow-500'>Partners</span>
-					</h2>
-					<p className='text-blue-950 text-lg text-center max-w-3xl mx-auto mb-10'>
-						We've forged strong partnerships with prestigious institutions
-						across the United States, opening doors to a diverse range of
-						academic opportunities. Our network ensures that you have access to
-						top-tier education and resources.
-					</p>
-					<div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6'>
-						{partners.map((partner) => (
-							<div
-								key={partner.id}
-								className='bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg'>
-								<img
-									src={partner.img}
-									alt={partner.title}
-									className='w-full h-32 object-contain p-4'
-								/>
-								<h5 className='bg-blue-900 text-white text-center py-2 px-4 text-sm font-semibold'>
-									{partner.title}
-								</h5>
-							</div>
-						))}
-					</div>
-				</section>
+				<PartnersSection />
 			</div>
 		</div>
 	)

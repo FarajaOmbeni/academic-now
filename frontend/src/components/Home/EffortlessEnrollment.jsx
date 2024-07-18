@@ -67,18 +67,24 @@ const EffortlessEnrollment = () => {
 							{enrollmentSteps.map((step, index) => (
 								<div
 									key={index}
-									className='bg-white rounded-lg shadow-md transition duration-300 hover:shadow-lg'>
+									className='bg-white rounded-lg shadow-md transition duration-300 hover:shadow-lg flex flex-col'>
 									<button
 										onClick={() => toggleStep(index)}
-										className='w-full flex justify-between items-center p-6 text-blue-900 text-xl font-semibold'>
+										className='w-full flex justify-between items-center p-3 text-blue-900 text-xl font-semibold'>
 										<span>{step.title}</span>
 										<step.icon className='text-2xl text-primary' />
 									</button>
-									{openStep === index && (
-										<div className='px-6 pb-6'>
-											<p className='text-blue-950'>{step.description}</p>
-										</div>
-									)}
+									<div
+										style={{
+											maxHeight: openStep === index ? '500px' : '0',
+											visibility: openStep === index ? 'visible' : 'hidden',
+											transition: 'max-height 0.3s ease, visibility 0.3s ease',
+										}}
+										className={`flex-1 p-3 ${
+											openStep === index ? 'open  ' : ''
+										}`}>
+										<p className='text-blue-950'>{step.description}</p>
+									</div>
 								</div>
 							))}
 						</div>
