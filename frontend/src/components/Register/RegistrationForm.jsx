@@ -1,193 +1,91 @@
 const RegistrationForm = () => {
-  return (
-    <div className="bg-[url('./assets/greenEcipse.png')] bg-no-repeat bg-left-top">
-      <div className="container mx-auto sm:px-16 px-6">
-        <div>
-          <h3 className="text-[#FF7162] montserrat text-2xl md:text-3xl font-extrabold leading-[54px] mt-4">
-            Registration Form - Personal Info
-          </h3>
-          <p className="text-[18px] leading-[32px] text-[#767676] font-normal mb-6 rounded-mplus">
-            Begin Your Journey with Us! Complete the Registration Form - to Get
-            Started.
-          </p>
-        </div>
+	return (
+		<div className='container mx-auto sm:px-16 px-6 py-5 text-yellow-50 rounded-2xl md:m-10 mb-10'>
+			<div className='text-center py-4'>
+				<div className='p-4 bg-blue-800 text-white rounded-full inline-flex items-center justify-center'>
+					<span className='text-indigo-900 bg-yellow-400 text-xs font-bold mr-2 px-2.5 py-0.5 rounded-full uppercase'>
+						New
+					</span>
+					<span className='font-semibold'>
+						Join our Academic Now program and unlock your potential!
+					</span>
+				</div>
+			</div>
+			<div className='py-8 max-w-prose mx-auto'>
+				<h2 className='text-blue-900 text-3xl sm:text-4xl font-bold mb-6 text-center'>
+					Start Your US Study Journey
+					<span className='text-yellow-500'>Today</span>
+				</h2>{' '}
+				<p className='text-lg md:text-xl leading-relaxed text-gray-700 font-medium mb-6 mt-4 rounded-mplus text-center'>
+					Your journey to academic excellence starts here. Fill out the form to
+					connect with top educators and unlock your full potential. Let us get
+					started!
+				</p>
+				{/* Actual form starts here */}
+				<div className='max-w-prose mx-auto p-8 bg-white rounded-lg shadow-xl'>
+					<form className='mt-8 space-y-6' action='#' method='POST'>
+						<form action='' className='w-full '>
+							<div className='flex flex-col w-full'>
+								<label className='text-[16px] leading-[22px] font-extrabold text-gray-500 mb-4 rounded-mplus'>
+									Full Name
+								</label>
+								<input
+									type='text'
+									placeholder='Your Full Name'
+									className='shadow-inner border-b-2 bg-gray-50 w-full px-3 py-4 rounded-3xl firstInput'></input>
+								<label className='text-[16px] leading-[22px] font-extrabold text-gray-500 mt-4 rounded-mplus'>
+									Email Address
+								</label>
+								<input
+									type='text'
+									placeholder='youremail@example.com'
+									className='shadow-inner border-b-2 bg-gray-50 w-full px-3 py-4 rounded-3xl firstInput'></input>
+								<label className='text-[16px] leading-[22px] font-extrabold text-gray-500 mt-4 rounded-mplus'>
+									Phone Number (Optional)
+								</label>
+								<input
+									type='text'
+									placeholder='Phone Number'
+									className='shadow-inner border-b-2 bg-gray-50 w-full px-3 py-4 rounded-3xl firstInput'></input>
+							</div>
+						</form>
+						<div className='rounded-md shadow-sm -space-y-px'>
+							<div className='flex flex-col w-full mt-6'>
+								<label className='text-[16px] leading-[22px] font-extrabold text-gray-500 mb-4 rounded-mplus'>
+									Current Level of Education
+								</label>
+								<select className='shadow-inner border-b-2 bg-gray-50 px-3 py-4 rounded-3xl firstInput'>
+									<option value=''>Select Level</option>
+									<option value='High School'>High School</option>
+									<option value='Undergraduate'>Undergraduate</option>
+									<option value='Graduate'>Graduate</option>
+								</select>
+							</div>
 
-        {/* Actual form starts here */}
-        <div className="">
-          <form action="" className="w-full">
-            <div className="mb-8 rounded-[30px] bg-customBlue p-6">
-              <div className="flex flex-col md:flex-row mb-12 gap-6">
-                <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Mwanaisha"
-                    className="bg-white w-full px-3 py-4 rounded-3xl firstInput"
-                  ></input>
-                </div>
+							<div className='flex flex-col w-full mt-6'>
+								<label className='text-base md:text-[16px] leading-[22px] font-extrabold text-gray-500 mb-4 rounded-mplus'>
+									Interested in Studying in the US?
+								</label>
+								<select
+									placeholder='yes/no'
+									className='shadow-inner border-b-2 bg-gray-50 px-3 py-2 md:py-4 rounded-3xl firstInput'>
+									<option value=''>Yes</option>
+									<option value='No'>No</option>
+								</select>
+							</div>
+						</div>
+						<div>
+							<div className='mb-8 flex justify-center items-center md:justify-start'>
+								<button className='bg-blue-600 hover:bg-blue-700 text-yellow-400 hover:text-yellow-300 text-lg md:text-2xl lg:text-3xl font-bold rounded-full px-6 py-3 md:px-10 md:py-4 lg:px-14 lg:py-5 shadow-lg transform hover:scale-105 transition-all duration-300'>
+									Connect with Academic Now
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	)
+}
 
-                <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                    Middle Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Babu"
-                    className="bg-white w-full px-3 py-4 rounded-3xl firstInput"
-                  ></input>
-                </div>
-                <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Chidzuga"
-                    className="bg-white w-full px-3 py-4 rounded-3xl firstInput"
-                  ></input>
-                </div>
-              </div>
-
-              <div className="flex flex-col md:flex-row mb-12 gap-6">
-                <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                    Gender
-                  </label>
-                  <select className="bg-white w-full px-3 py-4 rounded-3xl firstInput">
-                    <option value="">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-                <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                    Date of Birth
-                  </label>
-                  <input
-                    type="date"
-                    placeholder="First Name"
-                    className="bg-white px-3 py-4 rounded-3xl firstInput"
-                  ></input>
-                </div>
-                <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                    Year of Study
-                  </label>
-                  <select className="bg-white px-3 py-4 rounded-3xl firstInput">
-                    <option value="">First Year</option>
-                    <option value="1st">1st</option>
-                    <option value="2nd">2nd</option>
-                    <option value="3rd">3rd</option>
-                    <option value="4th">4th</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div className="mb-6 rounded-[30px] bg-customBlue p-6">
-              <h5 className="mb-6 text-black text-[18px] font-extrabold leading-[24px] montserrat">
-                Contact Information
-              </h5>
-              <div className="flex flex-col md:flex-row mb-12 gap-6">
-                <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                    Choose Country
-                  </label>
-                  <select className="bg-white px-3 py-4 rounded-3xl firstInput">
-                    <option value="">Kenya</option>
-                    <option value="1st">Uganda</option>
-                    <option value="2nd">Ethiopia</option>
-                    <option value="3rd">Tanzania</option>
-                    <option value="4th">Rwanda</option>
-                  </select>
-                </div>
-                <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                    City
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Nairobi"
-                    className="bg-white px-3 py-4 rounded-3xl firstInput"
-                  ></input>
-                </div>
-                <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                    Address
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="00100 Nairobi"
-                    className="bg-white px-3 py-4 rounded-3xl firstInput"
-                  ></input>
-                </div>
-              </div>
-
-              <div className="flex flex-col md:flex-row mb-12 gap-6">
-                <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                    Email Address
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="academicnow@gmail.com"
-                    className="bg-white px-3 py-4 rounded-3xl firstInput"
-                  ></input>
-                </div>
-                <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                    Phone Number
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="+254702567012"
-                    className="bg-white px-3 py-4 rounded-3xl firstInput"
-                  ></input>
-                </div>
-                <div className="flex flex-col w-full">
-                  <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                    Education Qualification
-                  </label>
-                  <select className="bg-white px-3 py-4 rounded-3xl firstInput">
-                    <option value="">B.Tech</option>
-                    <option value="1st">B.comm</option>
-                    <option value="2nd">IT</option>
-                    <option value="3rd">Agriculture</option>
-                    <option value="4th">Maths</option>
-                  </select>
-                </div>
-              </div>
-              <div className="flex flex-col w-full">
-                <label className="text-[16px] leading-[22px] font-extrabold text-black mb-4 rounded-mplus">
-                  Additional Academic Qualification
-                </label>
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="Please type your Field of Study/ Major
-GPA or Equivalent (Optional)"
-                  className="p-4 rounded-[20px] firstInput"
-                ></textarea>
-              </div>
-
-              {/* line */}
-              <div className="mt-12 mb-6 w-full bg-[#767676] h-[1px]"></div>
-            </div>
-
-            <div className="mb-8 flex justify-center items-center md:justify-start">
-              <button className="bg-[#2E3899] text-base sm:text-lg md:text-xl lg:text-2xl lg:leading-[24px] font-extrabold rounded-mplus rounded-[40px] px-4 py-2 md:px-8 md:py-4 lg:px-12 lg:py-6 text-white transform hover:scale-110 transition-all duration-200">
-                Register Now
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default RegistrationForm;
+export default RegistrationForm

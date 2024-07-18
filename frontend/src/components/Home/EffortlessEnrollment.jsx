@@ -1,39 +1,92 @@
-import { enrollmentImage } from "../../assets";
-import { enrollment } from "../../constants";
+import { useState } from 'react'
+import {
+	FaRegHandshake,
+	FaSearchDollar,
+	FaPenFancy,
+	FaUserTie,
+	FaPassport,
+	FaPlaneDeparture,
+} from 'react-icons/fa'
+
+const enrollmentSteps = [
+	{
+		icon: FaRegHandshake,
+		title: 'Step 1: Online Application',
+		description:
+			'Fill out our easy-to-use online application form with your personal and academic information.',
+	},
+	{
+		icon: FaSearchDollar,
+		title: 'Step 2: Application Review',
+		description:
+			'Our expert advisors will review your application and guide you through the next steps.',
+	},
+	{
+		icon: FaPenFancy,
+		title: 'Step 3: Program Selection',
+		description:
+			"We'll help you choose the best programs and universities that match your goals and qualifications.",
+	},
+	{
+		icon: FaUserTie,
+		title: 'Step 4: Application Submission',
+		description:
+			'Our team will assist you in preparing and submitting strong applications to your chosen schools.',
+	},
+	{
+		icon: FaPassport,
+		title: 'Step 5: Visa Assistance',
+		description:
+			"Once accepted, we'll guide you through visa applications, housing, and pre-departure preparations.",
+	},
+	{
+		icon: FaPlaneDeparture,
+		title: 'Step 6: Embark on Your Journey',
+		description:
+			'Congratulations! You are now ready to embark on your journey to study in the US.',
+	},
+]
 
 const EffortlessEnrollment = () => {
-  return (
-    <section className="">
-      <div className="bg-orangeColor mb-24">
-        <div className="flex flex-col lg:flex-row">
-          <div className="mb-8 lg:mb-0 flex justify-center items-center pt-6 bg-[url('./assets/halfEclipse.png')] bg-no-repeat bg-cover bg-left-top">
-            <img src={enrollmentImage} alt="enrollment image" className="w-[60%] lg:w-full"/>
-          </div>
-          <div className="px-6">
-            <h4 className="text-3xl md:text-4xl lg:text-5xl font-bold lg:leading-[66px] text-[#1C1C1C] mb-12 mt-6">
-              Effortless Enrollment
-            </h4>
-            <div className="flex flex-col items-center">
-              {enrollment.map((enroll) => (
-                <div
-                  className="flex gap-2 bg-white rounded-[20px] p-4 mb-8 w-full items-center"
-                  key={enroll.id}
-                >
-                  <p className="text-[#1C1C1C] text-2xl md:text-3xl font-bold">
-                    {enroll.number}
-                  </p>
-                  <div className="line"></div>
-                  <p className="text-[#1C1C1C] text-xl md:text-2xl font-bold">
-                    {enroll.content}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+	const [openStep, setOpenStep] = useState(null)
 
-export default EffortlessEnrollment;
+	const toggleStep = (index) => {
+		setOpenStep(openStep === index ? null : index)
+	}
+
+	return (
+		<section className=' py-16'>
+			<div className='container mx-auto px-4 sm:px-6 lg:px-8'>
+				<div className='flex flex-col items-center'>
+					<div className=' mx-auto'>
+						<h2 className='text-blue-900 text-3xl sm:text-4xl font-bold mb-6 text-center'>
+							Your Path to Success:{' '}
+							<span className='text-yellow-500'>Effortless Enrollment</span>
+						</h2>
+						<div className='space-y-4'>
+							{enrollmentSteps.map((step, index) => (
+								<div
+									key={index}
+									className='bg-white rounded-lg shadow-md transition duration-300 hover:shadow-lg'>
+									<button
+										onClick={() => toggleStep(index)}
+										className='w-full flex justify-between items-center p-6 text-blue-900 text-xl font-semibold'>
+										<span>{step.title}</span>
+										<step.icon className='text-2xl text-primary' />
+									</button>
+									{openStep === index && (
+										<div className='px-6 pb-6'>
+											<p className='text-blue-950'>{step.description}</p>
+										</div>
+									)}
+								</div>
+							))}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	)
+}
+
+export default EffortlessEnrollment

@@ -1,28 +1,57 @@
-import Flower from "../SvgComponents/Flower";
+import {
+	FaRegHandshake,
+	FaSearchDollar,
+	FaPenFancy,
+	FaUserTie,
+	FaPassport,
+	FaPlaneDeparture,
+} from 'react-icons/fa'
 
 const Introduction = () => {
-  return (
-    <div className="relative">
-      <div className="container mx-auto sm:px-16 px-6">
-        <div className="mb-12 flex items-center justify-center flex-col">
-          <h1 className="text-center mb-6 text-primaryBlue text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold lg:leading-[37px]">
-            At Academic Now
-          </h1>
-          <div className="flex items-center justify-center">
-            <p className="w-[70%] text-center text-[#292828] montserrat text-lg sm:text-xl md:text-2xl lg:text-3xl font-normal lg:leading-[37px]">
-              We provide comprehensive support for students, including
-              application assistance, scholarship search, essay guidance,
-              interview preparation, visa support and pre-departure orientation.
-            </p>
-          </div>
-        </div>
-      </div>
+	return (
+		<div className='relative bg-gray-50 py-12'>
+			<div className='container mx-auto sm:px-16 px-6'>
+				<div className='mb-12 flex items-center justify-center flex-col'>
+					<h1 className='text-center mb-6 text-primaryBlue text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold lg:leading-normal'>
+						Comprehensive support for students
+					</h1>
+					<ServicesGrid />
+				</div>
+			</div>
+		</div>
+	)
+}
 
-      <div className="absolute left-[-80px] top-[40%]">
-        <Flower width={150} height={150} fillColor="#650155" />
-      </div>
-    </div>
-  );
-};
+export default Introduction
 
-export default Introduction;
+const services = [
+	{ icon: FaRegHandshake, text: 'Application Assistance' },
+	{ icon: FaSearchDollar, text: 'Scholarship Search' },
+	{ icon: FaPenFancy, text: 'Essay Guidance' },
+	{ icon: FaUserTie, text: 'Interview Preparation' },
+	{ icon: FaPassport, text: 'Visa Support' },
+	{ icon: FaPlaneDeparture, text: 'Pre-departure Orientation' },
+]
+
+const ServiceItem = ({ Icon, text }) => (
+	<div className='flex flex-col items-center text-center hover:text-primary-500 cursor-pointer'>
+		<Icon className='mb-2 text-2xl' aria-label={text} />
+		<p className='text-sm sm:text-base'>{text}</p>
+	</div>
+)
+
+const ServicesGrid = () => (
+	<div className='py-8'>
+		<div className='max-w-4xl mx-auto'>
+			<div className='grid grid-cols-2 sm:grid-cols-3 gap-4'>
+				{services.map((service) => (
+					<ServiceItem
+						key={service.text}
+						Icon={service.icon}
+						text={service.text}
+					/>
+				))}
+			</div>
+		</div>
+	</div>
+)
