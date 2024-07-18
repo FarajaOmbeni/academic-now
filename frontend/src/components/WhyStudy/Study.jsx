@@ -10,14 +10,14 @@ const Study = () => {
 				<div className='my-12'>
 					{/* Video section */}
 					<div className='max-w-4xl mx-auto'>
-						<div className='aspect-w-16 aspect-h-9 bg-white rounded-lg shadow-lg overflow-hidden'>
+						<div className='aspect-w-16 aspect-h-9 bg-white rounded-lg overflow-hidden'>
 							<video
 								controls
 								width='50%'
 								height='auto'
 								muted
 								loop
-								className='w-full md:w-1/2 h-full object-cover mx-auto hover:shadow-xl transition-shadow duration-300'>
+								className='w-full md:w-1/2 h-full object-cover mx-auto hover:shadow-xl transition-shadow duration-300  rounded-2xl'>
 								<source src={main} type='video/mp4' />
 								Your browser does not support the video tag.
 							</video>

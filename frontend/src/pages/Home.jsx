@@ -7,6 +7,7 @@ import {
 	Testimonials,
 	WhyStudy,
 } from '../components'
+import PartnersSection from '../components/About/PartnersSection'
 
 const Home = () => {
 	return (
@@ -19,7 +20,7 @@ const Home = () => {
 				<OurServices />
 				<Testimonials />
 			</div>
-			<div className=' py-12 md:m-40 rounded-lg shadow-2xl'>
+			<div className=' py-12 md:m-40 rounded-lg'>
 				<h2 className='text-center text-3xl font-semibold text-gray-800'>
 					Contact Us
 				</h2>
@@ -34,6 +35,7 @@ const Home = () => {
 					</a>
 				</p>
 				<ContactUs showHeading={false} />
+				<PartnersSection />
 			</div>
 		</div>
 	)

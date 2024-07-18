@@ -36,7 +36,7 @@ const Navbar = () => {
 				<div className='flex justify-between h-16 py-2'>
 					<div className='flex-shrink-0 flex items-center'>
 						<Link to='/'>
-							<img src={logo} alt='Logo' className='h-16 w-auto my-1' />
+							<img src={logo} alt='Logo' className='h-16 w-auto py-0.5' />
 						</Link>
 					</div>
 

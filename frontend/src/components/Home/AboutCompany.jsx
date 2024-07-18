@@ -15,14 +15,14 @@ const AboutCompany = () => {
 						the United States. We bridge the gap between international
 						aspirations and world-class American education.
 					</p>
-					<div className='rounded-lg overflow-hidden shadow-lg'>
+					<div className='rounded-lg overflow-hidden '>
 						<video
 							controls
 							width='50%'
 							height='auto'
 							muted
 							loop
-							className='w-full md:w-1/2 mx-auto'>
+							className='w-full md:w-1/2 mx-auto  rounded-2xl'>
 							<source src={main} type='video/mp4' />
 							Your browser does not support the video tag.
 						</video>

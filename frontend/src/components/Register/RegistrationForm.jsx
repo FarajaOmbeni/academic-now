@@ -1,4 +1,17 @@
+import { useState } from 'react'
+
 const RegistrationForm = () => {
+	const [educationLevel, setEducationLevel] = useState('High School')
+	const [interestedInUS, setInterestedInUS] = useState('Yes')
+
+	const handleEducationLevelChange = (event) => {
+		setEducationLevel(event.target.value)
+	}
+
+	const handleInterestedInUSChange = (event) => {
+		setInterestedInUS(event.target.value)
+	}
+
 	return (
 		<div className='container mx-auto sm:px-16 px-6 py-5 text-yellow-50 rounded-2xl md:m-10 mb-10'>
 			<div className='text-center py-4'>
@@ -54,8 +67,14 @@ const RegistrationForm = () => {
 								<label className='text-[16px] leading-[22px] font-extrabold text-gray-500 mb-4 rounded-mplus'>
 									Current Level of Education
 								</label>
-								<select className='shadow-inner border-b-2 bg-gray-50 px-3 py-4 rounded-3xl firstInput'>
-									<option value=''>Select Level</option>
+								<select
+									className='shadow-inner border-b-2 bg-gray-50 px-3 py-4 rounded-3xl firstInput select-dropdown'
+									value={educationLevel}
+									onChange={handleEducationLevelChange}
+									required>
+									<option value='' disabled>
+										Select your education level
+									</option>
 									<option value='High School'>High School</option>
 									<option value='Undergraduate'>Undergraduate</option>
 									<option value='Graduate'>Graduate</option>
@@ -67,16 +86,21 @@ const RegistrationForm = () => {
 									Interested in Studying in the US?
 								</label>
 								<select
-									placeholder='yes/no'
-									className='shadow-inner border-b-2 bg-gray-50 px-3 py-2 md:py-4 rounded-3xl firstInput'>
-									<option value=''>Yes</option>
+									className='shadow-inner border-b-2 bg-gray-50 px-3 py-4 rounded-3xl firstInput select-dropdown'
+									value={interestedInUS}
+									onChange={handleInterestedInUSChange}
+									required>
+									<option value='' disabled>
+										Select an option
+									</option>
+									<option value='Yes'>Yes</option>
 									<option value='No'>No</option>
 								</select>
 							</div>
 						</div>
 						<div>
 							<div className='mb-8 flex justify-center items-center md:justify-start'>
-								<button className='bg-blue-600 hover:bg-blue-700 text-yellow-400 hover:text-yellow-300 text-lg md:text-2xl lg:text-3xl font-bold rounded-full px-6 py-3 md:px-10 md:py-4 lg:px-14 lg:py-5 shadow-lg transform hover:scale-105 transition-all duration-300'>
+								<button className='bg-blue-600 hover:bg-blue-700 text-yellow-400 w-full hover:text-yellow-300 text-lg lg:text-xl font-bold rounded-full px-6 py-3 md:px-10 md:py-4 lg:px-14 lg:py-5 shadow-lg transform hover:scale-105 transition-all duration-300'>
 									Connect with Academic Now
 								</button>
 							</div>

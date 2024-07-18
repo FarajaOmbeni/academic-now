@@ -45,9 +45,14 @@ const Footer = () => {
 					<FaYoutube className='text-2xl cursor-pointer hover:text-yellow-300' />
 					<FaTwitter className='text-2xl cursor-pointer hover:text-yellow-300' />
 				</div>
-				<div className='flex flex-col md:flex-row justify-between'>
+				<div
+					className='flex flex-col md:flex-row justify-between
+				items-center gap-4 md:gap-0 text-sm
+				bg-slate-950 p-5 rounded-2xl
+				
+				'>
 					<div>
-						<h4 className='text-xl font-semibold text-yellow-300 mb-2'>
+						<h4 className='text-xl font-semibold text-yellow-500 mb-2'>
 							Study in the USA with Academic Now
 						</h4>
 						<p className='text-sm mb-4'>
@@ -68,7 +73,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className='md:ml-8'>
-						<h4 className='text-xl font-semibold text-yellow-300 mb-2'>
+						<h4 className='text-xl font-semibold text-yellow-500 mb-2'>
 							Contact Us
 						</h4>
 						<p className='text-sm'>
@@ -78,7 +83,7 @@ const Footer = () => {
 						</p>
 					</div>
 				</div>
-				<div className='text-center mt-8 bg-white text-black p-2 w-fit mx-auto'>
+				<div className='text-center mt-8 bg-white text-black p-2 w-fit mx-auto rounded-full shadow-inner text-sm'>
 					<p className='text-sm'>
 						© {new Date().getFullYear()} Academic Now Foundation. All rights
 						reserved.
