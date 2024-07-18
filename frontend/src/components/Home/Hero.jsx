@@ -1,5 +1,5 @@
 import { HashLink as Link } from 'react-router-hash-link'
-import { Student } from '../../assets'
+import { blob, Student } from '../../assets'
 import { FaRocket, FaInfoCircle } from 'react-icons/fa'
 
 const Hero = () => {
@@ -42,7 +42,7 @@ const Hero = () => {
 							{/* Blob SVG behind the person */}
 							<img
 								className='absolute top-0 left-1/2 transform -translate-x-1/2 -z-10'
-								src='src/assets/blob.svg'
+								src={blob}
 								alt='Decorative blob'
 								style={{ width: '120%', height: 'auto' }}
 							/>
