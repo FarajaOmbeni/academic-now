@@ -63,15 +63,6 @@ const AboutCompany = () => {
 				</section>
 
 				<section>
-					<h2 className='text-blue-900 text-3xl md:text-4xl font-bold mb-6 text-center'>
-						Our <span className='text-yellow-500'>Partners</span>
-					</h2>
-					<p className='text-blue-950 text-lg text-center max-w-3xl mx-auto mb-10'>
-						We&apos;ve forged strong partnerships with prestigious institutions
-						across the United States, opening doors to a diverse range of
-						academic opportunities. Our network ensures that you have access to
-						top-tier education and resources.
-					</p>
 					<PartnersSection />
 				</section>
 			</div>
