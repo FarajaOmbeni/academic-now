@@ -1,23 +1,21 @@
-import { contactImg } from "../../assets";
-
 const ContactIntro = () => {
-  return (
-    <div className="container mx-auto sm:px-16 px-6">
-      <div className="flex items-center justify-center flex-col md:flex-row">
-        <div className="mt-6 mb-8 md:mb-0">
-          <h1 className="text-[#2A3280] text-3xl sm:text-4xl md:text-5xl text-center md:text-start lg:text-6xl mb-8 font-bold">Contact Us</h1>
-          <p className="text-[#717171] text-xl md:text-2xl font-medium text-center md:text-start">
-            Have any questions or remarks? <br /> We are here to help! <br />Just write us a
-            message with your concerns. <br /> Our team will get back to you promptly.
-          </p>
-        </div>
+	return (
+		<div className='container mx-auto sm:px-16 px-6 pt-12'>
+			<div className='flex flex-col items-center mb-8'>
+				<h1 className='text-primaryBlue text-4xl lg:text-5xl font-bold leading-tight'>
+					Get in Touch
+					<span className='text-black text-4xl lg:text-5xl font-light'>
+						{' '}
+						with Us
+					</span>
+				</h1>
+				<p className='text-center mt-4 mb-8 max-w-prose text-gray-600 text-lg lg:text-xl font-normal leading-relaxed'>
+					Whether you have a question, feedback, or need assistance, our team is
+					here to help. Reach out to us, and let&apos;s make things happen.
+				</p>
+			</div>
+		</div>
+	)
+}
 
-        <div className="">
-            <img src={contactImg} alt="contact-img" />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default ContactIntro;
+export default ContactIntro

@@ -1,12 +1,11 @@
-import { AcademicFoundation, WhoWeAre } from "../components"
+import { WhoWeAre } from '../components'
 
 const About = () => {
-  return (
-    <div>
-      <WhoWeAre />
-      <AcademicFoundation />
-    </div>
-  )
+	return (
+		<div>
+			<WhoWeAre />
+		</div>
+	)
 }
 
 export default About

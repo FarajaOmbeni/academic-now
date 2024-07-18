@@ -1,12 +1,11 @@
-import { AcademicFoundation, Study } from "../components"
+import { Study } from '../components'
 
 const WhyStudy = () => {
-  return (
-    <div>
-      <Study />
-      <AcademicFoundation />
-    </div>
-  )
+	return (
+		<div>
+			<Study />
+		</div>
+	)
 }
 
 export default WhyStudy
