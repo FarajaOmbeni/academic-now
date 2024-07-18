@@ -31,7 +31,7 @@ const Navbar = () => {
   useEffect(() => {
     const currentPath = location.pathname;
     const currentPage = currentPath.split("/")[1];
-    setActive(currentPage || "Home");
+    setActive(currentPage || "");
   }, [location]);
   
 

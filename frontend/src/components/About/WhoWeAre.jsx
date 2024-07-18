@@ -1,6 +1,7 @@
-import { aboutCompany } from "../../assets";
 import { partners, expertise } from "../../constants";
 import YellowCircle from "../SvgComponents/YellowCircle";
+import main from '../../assets/demo-videos.mp4';
+
 
 const WhoWeAre = () => {
   return (
@@ -15,13 +16,16 @@ const WhoWeAre = () => {
             </span>
           </h1>
 
-          <div className="">
+          {/* <div className="">
             <img src={aboutCompany} alt="students in class" />
-            {/* <img
-            src={playIcon}
-            className="absolute h-[116px] w-[116px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-            alt="play icon"
-          /> */}
+          </div> */}
+
+          <div>
+            {/* <DemoVideo /> */}
+            <video controls width="100%" height="auto" muted loop>
+              <source src={main} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className="flex flex-col items-center mt-24">
@@ -98,10 +102,10 @@ const WhoWeAre = () => {
       </div>
 
       <div className="absolute left-[-90px] top-[5%] sm:top-[35%]">
-        <YellowCircle width={150} height={150}/>
+        <YellowCircle width={150} height={150} />
       </div>
       <div className="absolute right-[-90px] top-[5%] sm:top-[35%]">
-        <YellowCircle width={150} height={150}/>
+        <YellowCircle width={150} height={150} />
       </div>
     </div>
   );

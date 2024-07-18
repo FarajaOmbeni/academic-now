@@ -1,4 +1,6 @@
-import { aboutCompany, halfEclipse, playIcon } from "../../assets";
+import { halfEclipse } from "../../assets";
+import main from '../../assets/demo-videos.mp4';
+
 
 const AboutCompany = () => {
   return (
@@ -19,11 +21,14 @@ const AboutCompany = () => {
         </p>
       </div>
 
-      <div className="relative">
-        <img src={aboutCompany} alt="students in class" className="z-30" />
-        <img src={playIcon} className="absolute h-[116px] w-[116px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="play icon"/>
-      </div>
 
+      <div>
+        {/* <DemoVideo /> */}
+        <video controls width="100%" height="auto" muted loop>
+          <source src={main} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
       <div className="absolute left-0 top-[50%] -z-10">
         <img src={halfEclipse} alt="eclipse image" />

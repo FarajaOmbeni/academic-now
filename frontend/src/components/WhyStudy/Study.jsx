@@ -1,9 +1,10 @@
-import { videoDiscussion } from "../../assets";
 import { WhyStudySection } from "../../constants";
+import main from '../../assets/demo-videos.mp4';
+
 
 const Study = () => {
   return (
-    <div className="container mx-auto sm:px-16 px-6"> 
+    <div className="container mx-auto sm:px-16 px-6">
       <div className="flex flex-col items-center mt-4 mb-8">
         <h1 className="text-primaryBlue text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold lg:leading-[66px]">
           Why Study in
@@ -49,8 +50,16 @@ const Study = () => {
         </h4>
       </div>
 
-      <div className="flex justify-center items-center mb-14">
+      {/* <div className="flex justify-center items-center mb-14">
         <img src={videoDiscussion} alt="discussion" />
+      </div> */}
+
+      <div className="mb-16">
+        {/* <DemoVideo /> */}
+        <video controls width="100%" height="auto" muted loop>
+          <source src={main} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   );
