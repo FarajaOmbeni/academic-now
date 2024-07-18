@@ -47,10 +47,10 @@ const Footer = () => {
 				</div>
 				<div
 					className='flex flex-col md:flex-row justify-between
-				items-center gap-4 md:gap-0 text-sm
-				bg-slate-950 p-5 rounded-2xl
-				
-				'>
+        items-center gap-4 md:gap-0 text-sm
+        bg-slate-950 p-5 rounded-2xl
+        
+        '>
 					<div>
 						<h4 className='text-xl font-semibold text-yellow-500 mb-2'>
 							Study in the USA with Academic Now
@@ -83,10 +83,18 @@ const Footer = () => {
 						</p>
 					</div>
 				</div>
-				<div className='text-center mt-8 bg-white text-black p-2 w-fit mx-auto rounded-full shadow-inner text-sm'>
+				<div className='text-center mt-8'>
 					<p className='text-sm'>
 						© {new Date().getFullYear()} Academic Now Foundation. All rights
 						reserved.
+					</p>
+					<p className='text-sm mt-4'>
+						Designed and Developed by{' '}
+						<a
+							href='https://kwetunova.com'
+							className='text-blue-400 hover:text-blue-300'>
+							Kwetunova
+						</a>
 					</p>
 				</div>
 			</div>
