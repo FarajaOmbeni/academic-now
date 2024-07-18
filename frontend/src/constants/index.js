@@ -9,7 +9,6 @@ import {
 	harvard,
 	purdue,
 	reliable,
-	southernCalifornia,
 	streamlinedApplications,
 	visaSupport,
 	yale,
@@ -157,11 +156,6 @@ export const expertise = [
 
 export const partners = [
 	{
-		id: 1,
-		title: 'University of S. Carlifornia',
-		img: southernCalifornia,
-	},
-	{
 		id: 2,
 		title: 'Harvard University',
 		img: harvard,
@@ -177,7 +171,7 @@ export const partners = [
 		img: purdue,
 	},
 	{
-		id: 3,
+		id: 4,
 		title: 'Yale University',
 		img: yale,
 	},
